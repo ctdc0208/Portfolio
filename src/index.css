@@ -4,5 +4,10 @@ html {
     margin: 0;
     font-size: 18px;
     font-family: 'Playfair Display', serif;
-    color: white;
+}
+
+.projects-container {
+    --tw-bg-opacity: 1;
+    background-color: #f9fafb;
+    background-color: rgb(249 250 251/var(--tw-bg-opacity));
 }

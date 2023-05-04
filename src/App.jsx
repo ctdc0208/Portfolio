@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './header'
 import Home from './Home'
+import Projects from './Projects'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div>
         <Header />
         <Home />
+        <Projects />
       </div>
     </>
   )

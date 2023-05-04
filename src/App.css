@@ -117,3 +117,9 @@ button:hover::after {
     align-items: end;
     justify-content: end;
 }
+
+.projects-bg {
+    --tw-bg-opacity: 1;
+    background-color: #f9fafb;
+    background-color: rgb(249 250 251/var(--tw-bg-opacity));
+}

@@ -1,7 +1,10 @@
 import './App.css'
 import Header from './header'
 import Home from './Home'
+import About from './About'
 import Projects from './Projects'
+import Contact from './Contact'
+import Footer from './Footer'
 
 function App() {
   return (
@@ -9,7 +12,10 @@ function App() {
       <div>
         <Header />
         <Home />
+        <About />
         <Projects />
+        <Contact />
+        <Footer />
       </div>
     </>
   )

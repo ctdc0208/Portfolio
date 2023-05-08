@@ -4,16 +4,9 @@ export default class Home extends Component {
     render() {
         return (
             <div className="home-container">
-                <div className="max-width home-grid">
-                    <div className="profile-photo"></div>
-                    <div className="profile-bibliography">
-                        <div className="home-about-me margin-15px">About me</div>
-                        <div className="home-bibliography margin-15px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptates inventore iste omnis modi, perferendis tempora assumenda, est dignissimos quo nobis at, unde culpa eius beatae eaque molestiae vitae perspiciatis.</div>
-                        <div className="home-links margin-15px">
-                            <button>Github</button>
-                            <button>Linked In</button>
-                        </div>
-                    </div>
+                <div className="max-width home-name">
+                    <div className="first-name">Christian dela Cruz</div>
+                    <div className="web-developer">Web Developer</div>
                 </div>
             </div>
         );

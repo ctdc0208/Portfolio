@@ -28,7 +28,7 @@ export default class Projects extends Component {
                         <div className="project-screenshot">Screenshot of Project</div>
                         <div className="project-info margin-15px">
                             <div className="project-header">
-                                <div className="project-name">Project One</div>
+                                <div className="project-name">Project Two</div>
                                 <div className="project-links">
                                     <button>View Code</button>
                                      <button>Live Preview</button>
@@ -43,7 +43,7 @@ export default class Projects extends Component {
                         <div className="project-screenshot">Screenshot of Project</div>
                         <div className="project-info margin-15px">
                             <div className="project-header">
-                                <div className="project-name">Project One</div>
+                                <div className="project-name">Project Three</div>
                                 <div className="project-links">
                                     <button>View Code</button>
                                      <button>Live Preview</button>
@@ -58,7 +58,7 @@ export default class Projects extends Component {
                         <div className="project-screenshot">Screenshot of Project</div>
                         <div className="project-info margin-15px">
                             <div className="project-header">
-                                <div className="project-name">Project One</div>
+                                <div className="project-name">Project Four</div>
                                 <div className="project-links">
                                     <button>View Code</button>
                                      <button>Live Preview</button>

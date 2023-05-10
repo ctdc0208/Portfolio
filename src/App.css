@@ -95,6 +95,7 @@ button:hover::after {
 .web-developer {
     font-size: 6rem;
     font-weight: bold;
+    color: #00bd2d;
 }
 
 .about-grid {

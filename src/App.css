@@ -11,7 +11,15 @@ button:hover {
     cursor: pointer;
 }
 
-button::after {
+.button-header {
+    color: white;
+}
+
+.button-header:hover {
+    cursor: pointer;
+}
+
+.button-header::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -67,10 +75,6 @@ button:hover::after {
     left: 0px;
 }
 
-.button-header {
-    color: white;
-}
-
 .home-container {
     height: 100vh;
     background-image: url(../src/assets/home-background.jpg);
@@ -103,6 +107,16 @@ button:hover::after {
     grid-template-rows: 80vh;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+}
+
+.github-button,
+.linkedin-button {
+    font-size: 2.5rem;
+}
+
+.github-button:hover,
+.linkedin-button:hover {
+    color: #00bd2d;
 }
 
 

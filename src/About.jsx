@@ -9,8 +9,8 @@ export default class About extends Component {
                     <div className="home-about-me margin-15px">About me</div>
                     <div className="home-bibliography margin-15px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptates inventore iste omnis modi, perferendis tempora assumenda, est dignissimos quo nobis at, unde culpa eius beatae eaque molestiae vitae perspiciatis.</div>
                     <div className="home-links margin-15px">
-                        <button>Github</button>
-                        <button>Linked In</button>
+                        <button className="fa fa-github github-button"></button>
+                        <button className="fa fa-linkedin-square linkedin-button" aria-hidden="true"></button>
                 </div>
                 </div>
             </div>

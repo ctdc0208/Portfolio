@@ -169,7 +169,6 @@ button:hover::after {
 }
 
 .projects-container {
-    padding: 2rem 0 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
@@ -182,25 +181,29 @@ button:hover::after {
 }
 
 .projects-card {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     margin: auto;
-    margin-top: 2.5rem;
-    -webkit-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
-    -moz-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
-    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
+    margin: 5rem auto 0 auto;
+    padding-bottom: 5rem;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 60rem;
+    border-bottom: 1px solid black;
 }
 
 .project-info {
     display: grid;
-    grid-row: auto auto;
-    grid-column: auto auto;
+    grid-column: 6 / -1;
+    -webkit-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
+    margin: 2rem 0 2rem 0;
+    padding: 1rem;
+    background-color: white;
 }
 
 .project-header {
     display: grid;
-    grid-row: auto auto;
-    grid-column: auto auto;
+    align-self: center;
 }
 
 .project-name {
@@ -223,9 +226,14 @@ button:hover::after {
 }
 
 .project-screenshot {
-    height: 18rem;
-    width: 32rem;
+    grid-column: 1 / 7;
+    aspect-ratio: auto 16 / 9;
     background-color: red;
+}
+
+.project-screenshot,
+.project-info {
+    grid-row: 1 / 2;
 }
 
 .project-1 {

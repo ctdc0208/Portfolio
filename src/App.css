@@ -24,12 +24,12 @@ button:hover {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1.5px;
     bottom: 0;
     left: 0;
     background-color: #00bd2d;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out
+    transition: transform 0.25s ease-out;
 }
 
 button:hover::after {
@@ -89,20 +89,39 @@ button:hover::after {
     padding-bottom: 1.5rem;
     width: 40.8rem;
     border-bottom: 3px solid white;
+    overflow: hidden;
 }
 
-.first-name {
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.name {
     font-size: 3rem;
 }
 
-.last-name {
-    font-size: 5rem;
+.name,
+.web-developer {
+    animation-duration: 1.5s;
+    overflow: hidden;
+    animation-name: slideup;
 }
 
 .web-developer {
     font-size: 6rem;
     font-weight: bold;
     color: #00bd2d;
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%) linear;
+        opacity: 1;
+    }
 }
 
 .about-grid {

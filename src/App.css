@@ -86,6 +86,9 @@ button:hover::after {
 .home-name {
     color: white;
     padding-top: 15rem;
+    padding-bottom: 1.5rem;
+    width: 40.8rem;
+    border-bottom: 3px solid white;
 }
 
 .first-name {

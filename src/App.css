@@ -190,15 +190,23 @@ button:hover::after {
     border-bottom: 1px solid black;
 }
 
-.project-info {
+.project-info,
+.project-info-opposite {
     display: grid;
-    grid-column: 6 / -1;
     -webkit-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
     box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
     margin: 2rem 0 2rem 0;
     padding: 1rem;
     background-color: white;
+}
+
+.project-info {
+    grid-column: 6 / -1;
+}
+
+.project-info-opposite {
+    grid-column: 1 / -6;
 }
 
 .project-header {
@@ -225,14 +233,26 @@ button:hover::after {
     padding-bottom: 20px;
 }
 
+.project-screenshot,
+.project-screenshot-opposite {
+    aspect-ratio: auto 16 / 9;
+    background-color: #dddddd;
+}
+
 .project-screenshot {
     grid-column: 1 / 7;
-    aspect-ratio: auto 16 / 9;
-    background-color: red;
+    box-shadow: 15px 15px 0px 0px #f3f4f6, 15px 15px 0px 2.5px #00bd2d;
+}
+
+.project-screenshot-opposite {
+    grid-column: -1 / -7;
+    box-shadow: -15px 15px 0px 0px #f3f4f6, -15px 15px 0px 2.5px #00bd2d;
 }
 
 .project-screenshot,
-.project-info {
+.project-info,
+.project-screenshot-opposite,
+.project-info-opposite {
     grid-row: 1 / 2;
 }
 
@@ -248,11 +268,6 @@ button:hover::after {
 
 .project-3 {
     grid-row: 4 / 5;
-    grid-column: 1 / 3;
-}
-
-.project-4 {
-    grid-row: 5 / 6;
     grid-column: 1 / 3;
 }
 

@@ -73,6 +73,7 @@ button:hover::after {
     right: 0px;
     bottom: 0px;
     left: 0px;
+    pointer-events: none;
 }
 
 .home-container {

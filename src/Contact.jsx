@@ -3,7 +3,7 @@ import { Component } from "react";
 export default class Contact extends Component {
     render() {
         return (
-            <div className="background-black">
+            <div className="background-black" id="contact">
                 <div className="contact-container">
                     <div className="contact-me">Contact</div>
                     <div className="contact-info">

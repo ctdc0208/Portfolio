@@ -3,7 +3,7 @@ import { Component } from "react";
 export default class About extends Component {
     render() {
         return (
-            <div className="max-width about-grid">
+            <div className="max-width about-grid" id="about">
                 <div className="profile-photo"></div>
                 <div className="profile-bibliography">
                     <div className="home-about-me margin-15px">About me</div>

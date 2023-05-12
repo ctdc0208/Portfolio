@@ -3,7 +3,7 @@ import { Component } from "react";
 export default class Projects extends Component {
     render() {
         return (
-            <div className="projects-bg">
+            <div className="projects-bg" id="projects">
             <div className="max-width padding-auto">
                 <div className="projects-container">
                     <div className="my-works">

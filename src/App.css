@@ -62,6 +62,7 @@ button:hover::after {
     left: 50%;
     transform: translate(-50%, 0);
     width: 100%;
+    z-index: 1;
 }
 
 .header-container::before {
@@ -74,14 +75,30 @@ button:hover::after {
     bottom: 0px;
     left: 0px;
     pointer-events: none;
+    z-index: 0;
 }
 
 .home-container {
     height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+.home-container::before {
     background-image: url(../src/assets/home-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.5;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .home-name {
@@ -91,6 +108,7 @@ button:hover::after {
     width: 40.8rem;
     border-bottom: 3px solid white;
     overflow: hidden;
+    position: relative;
 }
 
 .overflow-hidden {

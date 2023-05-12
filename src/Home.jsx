@@ -12,7 +12,7 @@ export default class Home extends Component {
                         </div>
                         <div className="overflow-hidden">
                         <div className="web-developer">Web Developer</div>
-                        </div>
+                    </div>
                 </div>
                     </div>
             </div>

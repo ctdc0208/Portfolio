@@ -36,7 +36,9 @@ function Contact() {
                             </div>
 
 
-                            <input type="submit" />
+                            <button type="submit">
+                                Send
+                            </button>
                         </form>
                                         </div>
                                     </div>

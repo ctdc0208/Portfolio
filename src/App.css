@@ -24,10 +24,9 @@ button:hover {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1.5px;
     bottom: 0;
     left: 0;
-    background-color: #00bd2d;
+    border-bottom: 1px solid #00bd2d;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -35,6 +34,10 @@ button:hover {
 button:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.active>button {
+    border-bottom: 1px solid #00bd2d;
 }
 
 .max-width {

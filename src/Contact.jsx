@@ -8,7 +8,7 @@ function Contact() {
     alert(JSON.stringify(data));
     }
         return (
-            <div className="background-black" id="contact">
+            <div className="contact-bg" id="contact">
                 <div className="contact-container">
                     <div className="contact-me">Contact</div>
                     <div className="contact-info">

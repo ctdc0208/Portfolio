@@ -45,6 +45,7 @@ button:hover::after {
 }
 
 .max-width {
+    display: block;
     max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
@@ -412,10 +413,19 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+    button {
+        font-size: .8rem;
+        margin: 0 .5rem 0 .5rem;
+    }
     .max-width {
+        display: block;
         max-width: 19rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    .header-button-container {
+        display: flex;
+        justify-content: center;
     }
     .home-name {
         width: 15rem;
@@ -431,10 +441,11 @@ button[type="submit"]:hover {
         grid-template-rows: repeat(10, auto);
         grid-template-columns: repeat(7, 1fr);
         align-items: center;
+        padding-bottom: 2rem;
     }
     .profile-photo {
-        height: 18rem;
-        width: 18rem;
+        height: 17rem;
+        width: 17rem;
         grid-row: 1 / 7;
         grid-column: 1 / -1;
         margin: 2rem auto 2rem auto;
@@ -442,7 +453,7 @@ button[type="submit"]:hover {
     .profile-bibliography {
         grid-row: 6 / -1;
         grid-column: 2 / -1;
-        background-color: white;
+        background-color: #f3f4f6;
         width: 100%;
         color: black;
         display: grid;
@@ -470,5 +481,31 @@ button[type="submit"]:hover {
         display: flex;
         align-items: end;
         justify-content: end;
+    }
+    .my-works {
+        font-size: 1.5em;
+    }
+    .projects-card {
+        display: grid;
+        margin: auto;
+        margin: 5rem auto 0 auto;
+        padding-bottom: 5rem;
+        grid-template-columns: repeat(10, 1fr);
+        max-width: 60rem;
+        border-bottom: 1px solid black;
+    }
+    .project-screenshot {
+        grid-column: 1 / 10;
+    }
+    .project-screenshot-opposite {
+        grid-column: 2 / -1;
+    }
+    .project-info {
+        grid-column: 2 / -1;
+        margin-top: 7rem;
+    }
+    .project-info-opposite {
+        grid-column: 1 / 10;
+        margin-top: 7rem;
     }
 }

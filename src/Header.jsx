@@ -5,7 +5,7 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header-container">
-            <div className="max-width padding-auto justify-end">
+            <div className="max-width padding-auto header-button-container">
               <Link activeClass="active" to="home" spy={true} smooth={true} offset={-250} duration={500}>
                 <button className="button-header" >Home</button>
               </Link>

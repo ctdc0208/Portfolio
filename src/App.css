@@ -508,4 +508,27 @@ button[type="submit"]:hover {
         grid-column: 1 / 10;
         margin-top: 7rem;
     }
+    .contact-container {
+        padding: 4rem .5rem 13rem .5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contact-info {
+        grid-column: 1 / 4;
+    }
+    .contact-links {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .contact-links button {
+        color: white;
+        font-size: 2rem;
+    }
+    .contact-form {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    .footer {
+        font-size: .75rem;
+    }
 }

@@ -112,28 +112,40 @@ button:hover::after {
 .home-name {
     color: white;
     padding-top: 15rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: .5rem;
     width: 40.8rem;
     border-bottom: 3px solid white;
     overflow: hidden;
     position: relative;
 }
 
-.name {
-    font-size: 3rem;
+.first-name, .last-name, .web, .developer {
+    font-size: 4rem;
+    text-transform: uppercase;
 }
 
-.name,
-.web-developer {
+.last-name {
+    margin-left: 4rem;
+}
+
+.first-name,
+.last-name,
+.web,
+.developer {
     animation-duration: 1.5s;
     overflow: hidden;
     animation-name: slideup;
 }
 
-.web-developer {
-    font-size: 6rem;
+.web, .developer {
     font-weight: bold;
     color: #00bd2d;
+}
+.web {
+    margin-left: 8rem;
+}
+.developer {
+    margin-left: 12rem;
 }
 
 @keyframes slideup {
@@ -430,11 +442,21 @@ button[type="submit"]:hover {
     .home-name {
         width: 15rem;
     }
-    .name {
-        font-size: 1.2rem;
+    .first-name, .last-name, .web, .developer {
+        font-size: 1.5rem;
     }
-    .web-developer {
-        font-size: 2.2rem;
+    .first-name {
+        margin-left: 0;
+    }
+    
+    .last-name {
+        margin-left: 1rem;
+    }
+    .web {
+        margin-left: 2rem;
+    }
+    .developer {
+        margin-left: 3rem;
     }
     .about-grid {
         display: grid;
@@ -532,3 +554,4 @@ button[type="submit"]:hover {
         font-size: .75rem;
     }
 }
+

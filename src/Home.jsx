@@ -7,15 +7,27 @@ export default class Home extends Component {
                 <div className="max-width">
                     <div className="home-name">
                         <div className="overflow-hidden">
-                            <div className="name">
-                                Christian dela Cruz</div>
+                            <div className="first-name">
+                                Christian
+                            </div>
                         </div>
                         <div className="overflow-hidden">
-                        <div className="web-developer">Web Developer</div>
+                            <div className="last-name">
+                                dela Cruz
+                            </div>
+                        </div>
+                        <div className="overflow-hidden">
+                            <div className="web">
+                                Web
+                            </div>
+                        </div>
+                        <div className="overflow-hidden">
+                            <div className="developer">Developer</div>
+                        </div>
                     </div>
                 </div>
                     </div>
-            </div>
+
         );
     }
 }

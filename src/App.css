@@ -113,7 +113,6 @@ button:hover::after {
     padding-top: 15rem;
     padding-bottom: 1.5rem;
     width: 40.8rem;
-    border-bottom: 3px solid white;
     overflow: hidden;
     position: relative;
 }
@@ -133,6 +132,8 @@ button:hover::after {
     font-size: 6rem;
     font-weight: bold;
     color: #00bd2d;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid white;
 }
 
 @keyframes slideup {
@@ -520,4 +521,15 @@ button[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {}
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    .home-name {
+        width: 34rem;
+        font-size: 1.5rem;
+    }
+    .name {
+        font-size: 2em;
+    }
+    .web-developer {
+        font-size: 3.3em;
+    }
+}

@@ -217,6 +217,7 @@ button:hover::after {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     font-size: 2em;
+    padding-top: 2rem;
 }
 
 .projects-card {
@@ -523,13 +524,13 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 1200px) and (min-width: 600px) {
     .home-name {
-        width: 34rem;
-        font-size: 1.5rem;
+        width: 65vw;
+        font-size: 2vw;
     }
     .name {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .web-developer {
-        font-size: 3.3em;
+        font-size: 4.75em;
     }
 }

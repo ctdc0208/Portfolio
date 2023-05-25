@@ -9,7 +9,7 @@ function Contact() {
     }
         return (
             <div className="contact-bg" id="contact">
-                <div className="contact-container max-widthd">
+                <div className="contact-container">
                     <div className="contact-me">Contact</div>
                     <div className="contact-info">
                         <div>I am currently looking for an oppurtunity, please feel free to send a message if you think our work could be mutually beneficial!</div>

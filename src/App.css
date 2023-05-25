@@ -46,9 +46,8 @@ button:hover::after {
 
 .max-width {
     display: block;
-    max-width: 70rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: min(90%, 70rem);
+    margin-inline: auto;
 }
 
 .margin-15px {
@@ -114,7 +113,6 @@ button:hover::after {
     padding-top: 15rem;
     padding-bottom: .5rem;
     width: 40.8rem;
-    border-bottom: 3px solid white;
     overflow: hidden;
     position: relative;
 }
@@ -140,6 +138,8 @@ button:hover::after {
 .web, .developer {
     font-weight: bold;
     color: #00bd2d;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid white;
 }
 .web {
     margin-left: 8rem;
@@ -161,9 +161,8 @@ button:hover::after {
 
 .about-grid {
     display: grid;
-    grid-template-rows: 80vh;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 5rem;
 }
 
 .github-button,
@@ -180,19 +179,15 @@ button:hover::after {
 /* initial photo */
 
 .profile-photo {
-    background-image: url(https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    justify-items: center;
-    height: 33.33rem;
-    width: 33.33rem;
+    display: block;
+    width: min(100%, 54rem);
+    height: auto;
 }
 
 .profile-bibliography {
     background-color: white;
-    width: 100%;
+    width: min(100%, 54rem);
+    height: auto;
     color: black;
     display: grid;
     grid-template-columns: 1fr;
@@ -234,6 +229,7 @@ button:hover::after {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     font-size: 2em;
+    padding-top: 2rem;
 }
 
 .projects-card {
@@ -429,12 +425,6 @@ button[type="submit"]:hover {
         font-size: .8rem;
         margin: 0 .5rem 0 .5rem;
     }
-    .max-width {
-        display: block;
-        max-width: 19rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .header-button-container {
         display: flex;
         justify-content: center;
@@ -462,21 +452,20 @@ button[type="submit"]:hover {
         display: grid;
         grid-template-rows: repeat(10, auto);
         grid-template-columns: repeat(7, 1fr);
-        align-items: center;
-        padding-bottom: 2rem;
+        padding-block: 2rem;
     }
     .profile-photo {
-        height: 17rem;
-        width: 17rem;
-        grid-row: 1 / 7;
-        grid-column: 1 / -1;
-        margin: 2rem auto 2rem auto;
+        height: min(100%, 17.5rem);
+        width: 100%;
+        grid-row: 1 / 5;
+        grid-column: 1 / 7;
     }
     .profile-bibliography {
-        grid-row: 6 / -1;
+        grid-row: 4 / -1;
         grid-column: 2 / -1;
         background-color: #f3f4f6;
         width: 100%;
+        margin-top: 1rem;
         color: black;
         display: grid;
         grid-template-columns: auto;
@@ -555,3 +544,18 @@ button[type="submit"]:hover {
     }
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    .home-name {
+        width: 65vw;
+        font-size: 2vw;
+    }
+    .name {
+        font-size: 2.5em;
+    }
+    .web-developer {
+        font-size: 4.75em;
+    }
+}
+>>>>>>> 6df0afe16d2ec3ab637c061385630f54ce54c546

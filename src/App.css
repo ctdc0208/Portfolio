@@ -117,36 +117,23 @@ button:hover::after {
     position: relative;
 }
 
-.first-name, .last-name, .web, .developer {
-    font-size: 4rem;
-    text-transform: uppercase;
+.name {
+    font-size: 3rem;
 }
-
-.last-name {
-    margin-left: 4rem;
-}
-
-.first-name,
-.last-name,
-.web,
-.developer {
+.name,
+.web-developer {
     animation-duration: 1.5s;
     overflow: hidden;
     animation-name: slideup;
 }
-
-.web, .developer {
+.web-developer {
+    font-size: 6rem;
     font-weight: bold;
     color: #00bd2d;
     padding-bottom: 1rem;
     border-bottom: 3px solid white;
 }
-.web {
-    margin-left: 8rem;
-}
-.developer {
-    margin-left: 12rem;
-}
+
 
 @keyframes slideup {
     from {
@@ -432,21 +419,11 @@ button[type="submit"]:hover {
     .home-name {
         width: 15rem;
     }
-    .first-name, .last-name, .web, .developer {
-        font-size: 1.5rem;
+    .name {
+        font-size: 1.2rem;
     }
-    .first-name {
-        margin-left: 0;
-    }
-    
-    .last-name {
-        margin-left: 1rem;
-    }
-    .web {
-        margin-left: 2rem;
-    }
-    .developer {
-        margin-left: 3rem;
+    .web-developer {
+        font-size: 2.2rem;
     }
     .about-grid {
         display: grid;
@@ -544,8 +521,6 @@ button[type="submit"]:hover {
     }
 }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 1200px) and (min-width: 600px) {
     .home-name {
         width: 65vw;
@@ -558,4 +533,3 @@ button[type="submit"]:hover {
         font-size: 4.75em;
     }
 }
->>>>>>> 6df0afe16d2ec3ab637c061385630f54ce54c546

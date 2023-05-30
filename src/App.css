@@ -1,8 +1,18 @@
+:root {
+    --clr-primary: #00bd2d;
+    --clr-neutral-100: #fff;
+    --clr-neutral-600: #f3f4f6;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
 
-button {
+button:hover {
+    cursor: pointer;
+}
+
+.button-header {
     background: none;
     border: none;
     font-size: 1.1em;
@@ -11,12 +21,8 @@ button {
     position: relative;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 .button-header {
-    color: white;
+    color: var(--clr-neutral-100);
 }
 
 .button-header:hover {
@@ -30,7 +36,7 @@ button:hover {
     transform: scaleX(0);
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid #00bd2d;
+    border-bottom: 1px solid var(--clr-primary);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -41,7 +47,7 @@ button:hover::after {
 }
 
 .active>button {
-    border-bottom: 1px solid #00bd2d;
+    border-bottom: 1px solid var(--clr-primary);
 }
 
 .max-width {
@@ -109,7 +115,7 @@ button:hover::after {
 }
 
 .home-name {
-    color: white;
+    color: var(--clr-neutral-100);
     padding-top: 15rem;
     padding-bottom: .5rem;
     width: 40.8rem;
@@ -120,20 +126,21 @@ button:hover::after {
 .name {
     font-size: 3rem;
 }
+
 .name,
 .web-developer {
     animation-duration: 1.5s;
     overflow: hidden;
     animation-name: slideup;
 }
+
 .web-developer {
     font-size: 6rem;
     font-weight: bold;
-    color: #00bd2d;
+    color: var(--clr-primary);
     padding-bottom: 1rem;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--clr-neutral-100);
 }
-
 
 @keyframes slideup {
     from {
@@ -159,7 +166,7 @@ button:hover::after {
 
 .github-button:hover,
 .linkedin-button:hover {
-    color: #00bd2d;
+    color: var(--clr-primary);
 }
 
 
@@ -172,7 +179,7 @@ button:hover::after {
 }
 
 .profile-bibliography {
-    background-color: white;
+    background-color: var(--clr-neutral-100);
     width: min(100%, 54rem);
     height: auto;
     color: black;
@@ -202,7 +209,7 @@ button:hover::after {
 
 .projects-bg {
     --tw-bg-opacity: 1;
-    background-color: #f3f4f6;
+    background-color: var(--clr-neutral-500);
     background-color: rgb(243 244 246/var(--tw-bg-opacity));
 }
 
@@ -237,7 +244,7 @@ button:hover::after {
     box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
     margin: 2rem 0 2rem 0;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--clr-neutral-100);
 }
 
 .project-info {
@@ -265,6 +272,7 @@ button:hover::after {
     display: flex;
     align-items: center;
     justify-content: end;
+    background-color: var(--clr-neutral-500);
 }
 
 .project-description {
@@ -280,12 +288,12 @@ button:hover::after {
 
 .project-screenshot {
     grid-column: 1 / 7;
-    box-shadow: 15px 15px 0px 0px #f3f4f6, 15px 15px 0px 2.5px #00bd2d;
+    box-shadow: 15px 15px 0px 0px var(--clr-neutral-500), 15px 15px 0px 2.5px var(--clr-primary);
 }
 
 .project-screenshot-opposite {
     grid-column: -1 / -7;
-    box-shadow: -15px 15px 0px 0px #f3f4f6, -15px 15px 0px 2.5px #00bd2d;
+    box-shadow: -15px 15px 0px 0px var(--clr-neutral-500), -15px 15px 0px 2.5px var(--clr-primary);
 }
 
 .project-screenshot,
@@ -312,7 +320,7 @@ button:hover::after {
 
 .contact-bg {
     background-color: black;
-    color: white;
+    color: var(--clr-neutral-100);
     background-image: url(../src/assets/contact-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -347,7 +355,7 @@ button:hover::after {
 }
 
 .contact-links button {
-    color: white;
+    color: var(--clr-neutral-100);
 }
 
 .contact-form {
@@ -361,10 +369,10 @@ textarea {
     display: block;
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid var(--clr-neutral-100);
     background-color: transparent;
     margin-bottom: .5rem;
-    color: white;
+    color: var(--clr-neutral-100);
 }
 
 input::placeholder,
@@ -386,8 +394,8 @@ textarea[placeholder="Message"] {
 
 button[type="submit"] {
     background: transparent;
-    color: white;
-    border: 1px solid white;
+    color: var(--clr-neutral-100);
+    border: 1px solid var(--clr-neutral-100);
     padding: .5rem;
     margin: 2rem 0;
     width: 4rem;
@@ -395,8 +403,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #00bd2d;
-    color: white;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-100);
 }
 
 .footer {
@@ -404,7 +412,7 @@ button[type="submit"]:hover {
     justify-content: center;
     padding: 1rem 0 1rem 0;
     background-color: black;
-    color: white;
+    color: var(--clr-neutral-100);
 }
 
 @media screen and (max-width: 600px) {
@@ -440,7 +448,7 @@ button[type="submit"]:hover {
     .profile-bibliography {
         grid-row: 4 / -1;
         grid-column: 2 / -1;
-        background-color: #f3f4f6;
+        background-color: var(--clr-neutral-500);
         width: 100%;
         margin-top: 1rem;
         color: black;
@@ -508,7 +516,7 @@ button[type="submit"]:hover {
         grid-row: 3 / 4;
     }
     .contact-links button {
-        color: white;
+        color: var(--clr-neutral-100);
         font-size: 2rem;
     }
     .contact-form {

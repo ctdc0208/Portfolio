@@ -298,7 +298,7 @@ button:hover::after {
     display: flex;
     align-items: center;
     justify-content: end;
-    background-color: var(--clr-neutral-500);
+    background-color: var(--clr-neutral-600);
 }
 
 .project-description {
@@ -314,12 +314,12 @@ button:hover::after {
 
 .project-screenshot {
     grid-column: 1 / 7;
-    box-shadow: 15px 15px 0px 0px var(--clr-neutral-500), 15px 15px 0px 2.5px var(--clr-primary);
+    box-shadow: 20px 20px 0px 0px var(--clr-neutral-600), 20px 20px 0px 2.5px var(--clr-primary);
 }
 
 .project-screenshot-opposite {
     grid-column: -1 / -7;
-    box-shadow: -15px 15px 0px 0px var(--clr-neutral-500), -15px 15px 0px 2.5px var(--clr-primary);
+    box-shadow: -20px 20px 0px 0px var(--clr-neutral-600), -20px 20px 0px 2.5px var(--clr-primary);
 }
 
 .project-screenshot,

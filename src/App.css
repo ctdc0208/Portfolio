@@ -243,22 +243,22 @@ button:hover::after {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
+    margin-block: 4rem;
 }
 
 .my-works {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    font-size: 2em;
-    padding-top: 2rem;
+    font-size: 3rem;
 }
 
 .projects-card {
     display: grid;
     margin: auto;
     margin: 5rem auto 0 auto;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     grid-template-columns: repeat(10, 1fr);
-    max-width: 60rem;
+    width: min(60rem, 90%);
     border-bottom: 1px solid black;
 }
 
@@ -268,7 +268,7 @@ button:hover::after {
     -webkit-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
     box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.31);
-    margin: 2rem 0 2rem 0;
+    margin: 5rem 0 -5rem 0;
     padding: 1rem;
     background-color: var(--clr-neutral-100);
 }

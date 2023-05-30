@@ -120,18 +120,19 @@ button:hover::after {
     width: 100%;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    margin-inline: auto;
+    width: max-content;
     padding-top: 9rem;
     padding-bottom: 2rem;
     border-bottom: 3px solid var(--clr-neutral-100);
 }
 
 .first-name {
-    margin-left: 10rem;
+    margin-left: 0rem;
 }
 
 .last-name {
-    margin-left: 15rem;
+    margin-left: 10rem;
 }
 
 .web-name {
@@ -139,7 +140,7 @@ button:hover::after {
 }
 
 .developer-name {
-    margin-left: 25rem;
+    margin-left: 30rem;
 }
 
 .first-name,
@@ -148,9 +149,9 @@ button:hover::after {
 .developer-name {
     font-size: 5.5rem;
     text-transform: uppercase;
-    animation-duration: 2s;
     overflow: hidden;
-    animation-name: slideup;
+    animation: slideUp ease 1s forwards;
+    opacity: 0;
 }
 
 .first-name,
@@ -164,13 +165,16 @@ button:hover::after {
     color: var(--clr-primary);
 }
 
-@keyframes slideup {
-    from {
+.slideUp {
+    animation: slideUp ease 1s forwards 1.2s;
+}
+
+@keyframes slideUp {
+    0% {
         transform: translateY(100%);
-        opacity: 0;
     }
-    to {
-        transform: translateY(0%) linear;
+    100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -200,7 +204,7 @@ button:hover::after {
 }
 
 .home-about-me {
-    font-size: 2em;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -214,12 +218,19 @@ button:hover::after {
 .home-bibliography div {
     margin: 1rem 0 1rem 1rem;
     font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 .home-links {
     display: flex;
     align-items: end;
     justify-content: end;
+    margin-top: 3rem;
+}
+
+.home-links button {
+    font-size: 3.5rem;
+    margin-left: 2rem;
 }
 
 .projects-bg {

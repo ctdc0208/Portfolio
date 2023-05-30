@@ -21,7 +21,7 @@ export default class About extends Component {
                             it for eye pleasing designs and making them come to life is what I do!
                         </div>
                     </div>
-                    <div className="home-links margin-15px">
+                    <div className="home-links">
                         <button className="fa fa-github github-button"></button>
                         <button className="fa fa-linkedin-square linkedin-button" aria-hidden="true"></button>
                 </div>

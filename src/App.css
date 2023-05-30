@@ -8,6 +8,11 @@
     overflow: hidden;
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -92,7 +97,7 @@ button:hover::after {
 }
 
 .home-container {
-    height: 100vh;
+    aspect-ratio: auto 16 / 9;
     position: relative;
     background-color: #000;
 }
@@ -116,30 +121,51 @@ button:hover::after {
 
 .home-name {
     color: var(--clr-neutral-100);
-    padding-top: 15rem;
-    padding-bottom: .5rem;
-    width: 40.8rem;
+    width: 100%;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--clr-neutral-100);
 }
 
-.name {
-    font-size: 3rem;
+.first-name {
+    margin-left: 10rem;
 }
 
-.name,
-.web-developer {
-    animation-duration: 1.5s;
+.last-name {
+    margin-left: 15rem;
+}
+
+.web-name {
+    margin-left: 20rem;
+}
+
+.developer-name {
+    margin-left: 25rem;
+}
+
+.first-name,
+.last-name,
+.web-name,
+.developer-name {
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    animation-duration: 2s;
     overflow: hidden;
     animation-name: slideup;
 }
 
-.web-developer {
-    font-size: 6rem;
-    font-weight: bold;
+.first-name,
+.last-name {
+    font-weight: lighter;
+}
+
+.web-name,
+.developer-name {
+    font-weight: 800;
     color: var(--clr-primary);
-    padding-bottom: 1rem;
-    border-bottom: 3px solid var(--clr-neutral-100);
 }
 
 @keyframes slideup {

@@ -17,7 +17,9 @@ button:hover {
     cursor: pointer;
 }
 
-.button-header {
+.button-header,
+.view-code-button,
+.live-preview-button {
     background: none;
     border: none;
     font-size: 1.1em;
@@ -30,29 +32,36 @@ button:hover {
     color: var(--clr-neutral-100);
 }
 
-.button-header:hover {
+.button-header:hover,
+.view-code-button:hover,
+.live-preview-button:hover {
     cursor: pointer;
 }
 
-.button-header::after {
+.button-header::after,
+.view-code-button::after,
+.live-preview-button::after {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    bottom: 0;
+    bottom: -2px;
     left: 0;
-    border-bottom: 1px solid var(--clr-primary);
+    border-bottom: 2px solid var(--clr-primary);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
-button:hover::after {
+.button-header:hover::after,
+.view-code-button:hover::after,
+.live-preview-button:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
 .active>button {
-    border-bottom: 1px solid var(--clr-primary);
+    bottom: 0;
+    border-bottom: 2px solid var(--clr-primary);
 }
 
 .max-width {
@@ -298,7 +307,18 @@ button:hover::after {
     display: flex;
     align-items: center;
     justify-content: end;
-    background-color: var(--clr-neutral-600);
+}
+
+.view-code-button,
+.live-preview-button {
+    background: none;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+}
+
+.live-preview-button {
+    margin-left: 1rem;
 }
 
 .project-description {
@@ -307,7 +327,7 @@ button:hover::after {
 }
 
 .project-screenshot,
-.project-screenshot-opposite {
+.project-screenshot-opposite-2 {
     aspect-ratio: auto 16 / 9;
     background-color: #dddddd;
 }
@@ -317,14 +337,18 @@ button:hover::after {
     box-shadow: 20px 20px 0px 0px var(--clr-neutral-600), 20px 20px 0px 2.5px var(--clr-primary);
 }
 
-.project-screenshot-opposite {
+.project-screenshot-opposite-2 {
     grid-column: -1 / -7;
     box-shadow: -20px 20px 0px 0px var(--clr-neutral-600), -20px 20px 0px 2.5px var(--clr-primary);
+    background-image: url(./assets/weather-app-sc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project-screenshot,
 .project-info,
-.project-screenshot-opposite,
+.project-screenshot-opposite-2,
 .project-info-opposite {
     grid-row: 1 / 2;
 }
@@ -518,7 +542,7 @@ button[type="submit"]:hover {
     .project-screenshot {
         grid-column: 1 / 10;
     }
-    .project-screenshot-opposite {
+    .project-screenshot-opposite-2 {
         grid-column: 2 / -1;
     }
     .project-info {

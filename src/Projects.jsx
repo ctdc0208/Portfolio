@@ -25,17 +25,17 @@ export default class Projects extends Component {
                         </div>
                     </div>
                     <div className="projects-card project-2">
-                        <div className="project-screenshot-opposite">Screenshot of Project</div>
+                        <div className="project-screenshot-opposite-2"></div>
                         <div className="project-info-opposite margin-15px">
                             <div className="project-header">
-                                <div className="project-name">Project Two</div>
+                                <div className="project-name">Weather App</div>
                                 <div className="project-links">
-                                    <button>View Code</button>
-                                     <button>Live Preview</button>
+                                    <a className="view-code-button" href="https://github.com/nexus0208/Weather-App" target="_blank" rel="noreferrer">View Code</a>
+                                    <a className="live-preview-button" href="https://nexus0208.github.io/Weather-App/" target="_blank" rel="noreferrer">Live Preview</a>
                                 </div>
                             </div>
-                            <div className="project-description">
-                                Short description of the project. Just a couple sentences will do
+                            <div className="project-description"> 
+                                A weather forecast site using the OpenWeatherMap Weather API.
                             </div>
                         </div>
                     </div>

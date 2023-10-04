@@ -12,12 +12,12 @@ export default class About extends Component {
                         </div>
                         <div>
                             Growing up, I am fascinated by everything tech related, searching the most 
-                            cost-effective device for a specific purpose(smartphones, PC, earphones, etc) 
+                            cost-effective device for a specific purpose (smartphones, PC, earphones, etc) 
                             and building my very first cheap potato PC that always need troubleshooting (LOL), 
                             are some experiences that help improve my problem-solving skills.
                         </div>
                         <div>
-                            Today, web development interest me. Learning new ways, technologies and implementing 
+                            Today, web development interests me. Learning new ways, technologies and implementing 
                             it for eye pleasing designs and making them come to life is what I do!
                         </div>
                     </div>

@@ -373,6 +373,7 @@ button:hover {
     color: var(--clr-neutral-100);
     background-image: url(../src/assets/contact-bg.jpg);
     background-size: cover;
+    height: 820px;
     background-repeat: no-repeat;
     background-position: center;
 }

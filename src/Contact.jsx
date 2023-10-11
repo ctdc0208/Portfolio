@@ -18,6 +18,7 @@ function Contact() {
                             <button className="fa fa-github github-button"></button>
                             <button className="fa fa-linkedin-square linkedin-button" aria-hidden="true"></button>
                     </div>
+                    {/*
                     <div className="contact-form">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div>
@@ -41,6 +42,7 @@ function Contact() {
                             </button>
                         </form>
                                         </div>
+                            */}
                                     </div>
                                 </div>
         )

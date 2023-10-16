@@ -200,7 +200,7 @@ button:hover {
 
 .github-button,
 .linkedin-button {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .linkedin-button {
@@ -247,6 +247,68 @@ button:hover {
 .home-links a {
     color: #000;
     text-decoration: none;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(7, 120px);
+    grid-template-rows: 120px;
+    gap: 5px;
+    margin-top: 4rem;
+}
+
+.skills-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-name {
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+.dotted-border {
+    border: var(--clr-neutral-1000);
+    border-width: 2px;
+    border-style: dotted;
+}
+
+.skills-logo {
+    background-image: url(./assets/react.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+}
+
+.react-logo-svg {
+    background-image: url(./assets/react.svg);
+}
+
+.node-logo-svg {
+    background-image: url(./assets/nodejs-seeklogo.com.svg);
+}
+
+.html-logo-svg {
+    background-image: url(./assets/html-5-logo-svgrepo-com.svg);
+}
+
+.css-logo-svg {
+    background-image: url(./assets/CSS.3.svg);
+}
+
+.js-logo-svg {
+    background-image: url(./assets/logo-javascript.svg);
+}
+
+.npm-logo-svg {
+    background-image: url(./assets/npm-2.svg);
+}
+
+.cplus-logo-svg {
+    background-image: url(./assets/c.svg);
 }
 
 .projects-bg {

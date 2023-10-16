@@ -1,12 +1,14 @@
-import { useForm } from "react-hook-form";
+//import { useForm } from "react-hook-form";
 
 
 function Contact() {
+    {/*
     const { register, handleSubmit } = useForm({
     });
     const onSubmit = (data) => {
     alert(JSON.stringify(data));
     }
+    */}
         return (
             <div className="contact-bg" id="contact">
                 <div className="contact-container">

@@ -239,9 +239,8 @@ button:hover {
 
 .home-links {
     display: flex;
-    align-items: end;
     justify-content: end;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .home-links a {
@@ -254,7 +253,8 @@ button:hover {
     grid-template-columns: repeat(7, 120px);
     grid-template-rows: 120px;
     gap: 5px;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .skills-container div {
@@ -337,7 +337,8 @@ button:hover {
     padding-bottom: 10rem;
     grid-template-columns: repeat(10, 1fr);
     width: min(60rem, 90%);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
+    border-color: var(--clr-neutral-900);
 }
 
 .project-info,

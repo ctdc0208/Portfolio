@@ -2,13 +2,16 @@
     --clr-primary: #00bd2d;
     --clr-neutral-100: #fff;
     --clr-neutral-600: #f3f4f6;
+    --clr-neutral-900: #696969;
+    --clr-neutral-1000: #000000:
 }
 
 .overflow-hidden {
     overflow: hidden;
 }
 
-button {
+button,
+a {
     border: none;
     background: none;
 }
@@ -197,7 +200,11 @@ button:hover {
 
 .github-button,
 .linkedin-button {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+}
+
+.linkedin-button {
+    margin-left: 1.5rem;
 }
 
 .github-button:hover,
@@ -237,9 +244,9 @@ button:hover {
     margin-top: 3rem;
 }
 
-.home-links button {
-    font-size: 3.5rem;
-    margin-left: 2rem;
+.home-links a {
+    color: #000;
+    text-decoration: none;
 }
 
 .projects-bg {
@@ -312,9 +319,15 @@ button:hover {
 .view-code-button,
 .live-preview-button {
     background: none;
-    color: #000;
+    color: var(--clr-neutral-900);
     text-decoration: none;
     display: flex;
+    font-size: 0.9em;
+}
+
+.view-code-button:hover,
+.live-preview-button:hover {
+    color: var(--clr-neutral-1000);
 }
 
 .live-preview-button {
@@ -326,21 +339,35 @@ button:hover {
     padding-bottom: 20px;
 }
 
-.project-screenshot,
-.project-screenshot-opposite-2 {
+.project-screenshot-1,
+.project-screenshot-opposite-2,
+.project-screenshot-3 {
     aspect-ratio: auto 16 / 9;
     background-color: #dddddd;
 }
 
-.project-screenshot {
+.project-screenshot-1 {
     grid-column: 1 / 7;
     box-shadow: 20px 20px 0px 0px var(--clr-neutral-600), 20px 20px 0px 2.5px var(--clr-primary);
+    background-image: url(./assets/cv-application-sc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project-screenshot-opposite-2 {
     grid-column: -1 / -7;
     box-shadow: -20px 20px 0px 0px var(--clr-neutral-600), -20px 20px 0px 2.5px var(--clr-primary);
     background-image: url(./assets/weather-app-sc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-screenshot-3 {
+    grid-column: 1 / 7;
+    box-shadow: 20px 20px 0px 0px var(--clr-neutral-600), 20px 20px 0px 2.5px var(--clr-primary);
+    background-image: url(./assets/cv-application-sc.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -405,8 +432,9 @@ button:hover {
     grid-row: 3 / 4;
 }
 
-.contact-links button {
+.contact-links a {
     color: var(--clr-neutral-100);
+    text-decoration: none;
 }
 
 .contact-form {
@@ -540,7 +568,8 @@ button[type="submit"]:hover {
         max-width: 60rem;
         border-bottom: 1px solid black;
     }
-    .project-screenshot {
+    .project-screenshot-1,
+    .project-screenshot-3 {
         grid-column: 1 / 10;
     }
     .project-screenshot-opposite-2 {

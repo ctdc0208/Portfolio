@@ -339,16 +339,19 @@ button:hover {
     padding-bottom: 20px;
 }
 
-.project-screenshot-1,
+.project-screenshot,
 .project-screenshot-opposite-2,
 .project-screenshot-3 {
     aspect-ratio: auto 16 / 9;
     background-color: #dddddd;
 }
 
-.project-screenshot-1 {
+.project-screenshot {
     grid-column: 1 / 7;
     box-shadow: 20px 20px 0px 0px var(--clr-neutral-600), 20px 20px 0px 2.5px var(--clr-primary);
+}
+
+.project-screenshot-1 {
     background-image: url(./assets/cv-application-sc.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -365,9 +368,7 @@ button:hover {
 }
 
 .project-screenshot-3 {
-    grid-column: 1 / 7;
-    box-shadow: 20px 20px 0px 0px var(--clr-neutral-600), 20px 20px 0px 2.5px var(--clr-primary);
-    background-image: url(./assets/cv-application-sc.png);
+    background-image: url(./assets/DC-motor-sc.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -568,8 +569,7 @@ button[type="submit"]:hover {
         max-width: 60rem;
         border-bottom: 1px solid black;
     }
-    .project-screenshot-1,
-    .project-screenshot-3 {
+    .project-screenshot {
         grid-column: 1 / 10;
     }
     .project-screenshot-opposite-2 {

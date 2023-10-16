@@ -10,18 +10,17 @@ export default class Projects extends Component {
                         My Works
                     </div>
                     <div className="projects-card project-1">
-                        <div className="project-screenshot">Screenshot of Project</div>
+                        <div className="project-screenshot project-screenshot-1"></div>
                         <div className="project-info margin-15px">
                             <div className="project-header">
                                 <div className="project-name">CV Application</div>
                                 <div className="project-links">
-                                    <button>View Code</button>
-                                     <button>Live Preview</button>
+                                    <a className="view-code-button" href="https://github.com/nexus0208/CV-Application" target="_blank" rel="noreferrer">View Code</a>
+                                    <a className="live-preview-button" href="https://nexus0208.github.io/CV-Application/" target="_blank" rel="noreferrer">Live Preview</a>
                                 </div>
                             </div>
                             <div className="project-description">
-                                Short description of the project. Just a couple sentences will do
-                            </div>
+                            A CV Application designed to help individuals create and manage their professional resumes.                            </div>
                         </div>
                     </div>
                     <div className="projects-card project-2">
@@ -40,17 +39,16 @@ export default class Projects extends Component {
                         </div>
                     </div>
                     <div className="projects-card project-3">
-                        <div className="project-screenshot">Screenshot of Project</div>
+                        <div className="project-screenshot project-screenshot-3"></div>
                         <div className="project-info margin-15px">
                             <div className="project-header">
-                                <div className="project-name">Project Three</div>
+                                <div className="project-name">DC-Motor Variable Speed</div>
                                 <div className="project-links">
-                                    <button>View Code</button>
-                                     <button>Live Preview</button>
+                                    <a className="view-code-button" href="https://github.com/nexus0208/DC-motor-with-variable-speed" target="_blank" rel="noreferrer">View Code</a>
                                 </div>
                             </div>
                             <div className="project-description">
-                                Short description of the project. Just a couple sentences will do
+                            Designed an Arduino-based speed controller system for precise control of DC motor speeds.
                             </div>
                         </div>
                     </div>

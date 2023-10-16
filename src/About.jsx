@@ -22,8 +22,8 @@ export default class About extends Component {
                         </div>
                     </div>
                     <div className="home-links">
-                        <button className="fa fa-github github-button"></button>
-                        <button className="fa fa-linkedin-square linkedin-button" aria-hidden="true"></button>
+                        <a className="fa fa-github github-button" href="https://github.com/nexus0208" target="_blank" rel="noreferrer"></a>
+                        <a className="fa fa-linkedin-square linkedin-button" href="https://www.linkedin.com/in/ctdc0208/" target="_blank" rel="noreferrer"></a>
                 </div>
                 </div>
             </div>

@@ -17,8 +17,8 @@ function Contact() {
                         <div>I am currently looking for an oppurtunity, please feel free to send a message if you think our work could be mutually beneficial!</div>
                     </div>
                     <div className="contact-links">
-                            <button className="fa fa-github github-button"></button>
-                            <button className="fa fa-linkedin-square linkedin-button" aria-hidden="true"></button>
+                           <a className="fa fa-github github-button" href="https://github.com/nexus0208" target="_blank" rel="noreferrer"></a>
+                        <a className="fa fa-linkedin-square linkedin-button" href="https://www.linkedin.com/in/ctdc0208/" target="_blank" rel="noreferrer"></a>
                     </div>
                     {/*
                     <div className="contact-form">

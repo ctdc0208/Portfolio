@@ -25,7 +25,7 @@ button:hover {
 .live-preview-button {
     background: none;
     border: none;
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-left: 1rem;
     display: inline-block;
     position: relative;
@@ -104,27 +104,19 @@ button:hover {
     z-index: 0;
 }
 
-.home-container {
-    aspect-ratio: auto 16 / 9;
-    position: relative;
+.home-background {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-color: #000;
 }
 
-.home-container::before {
-    background-image: url(../src/assets/home-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: 0;
-    pointer-events: none;
+.inset-0 {
+    inset: 0 !important;
+}
+
+.opacity-80 {
+    opacity: 0.8;
 }
 
 .home-name {
@@ -162,7 +154,7 @@ button:hover {
     font-size: 5.5rem;
     text-transform: uppercase;
     overflow: hidden;
-    animation: slideUp ease 1s forwards;
+    animation: slideUp ease 2s forwards;
     opacity: 0;
 }
 

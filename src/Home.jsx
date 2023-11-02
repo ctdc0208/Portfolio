@@ -32,7 +32,7 @@ export default class Home extends Component {
                         ),
                     }
                   ]}
-                style={{ aspectRatio: '1.1 / 1' }}
+                style={{ aspectRatio: '16 / 8' }}
                 id="home"
                 factor={2}
                 />

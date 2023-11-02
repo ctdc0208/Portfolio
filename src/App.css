@@ -1,9 +1,40 @@
 :root {
     --clr-primary: #00bd2d;
     --clr-neutral-100: #fff;
+    --clr-neutral-300: #f5f5f5;
     --clr-neutral-600: #f3f4f6;
+    --clr-neutral-700: #d8d8d8;
     --clr-neutral-900: #696969;
-    --clr-neutral-1000: #000000:
+    --clr-neutral-1000: #000000;
+    --font-color-700: #808080;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.top-30 {
+    top: 10rem;
+}
+
+.grid-10 {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+}
+
+.bg-100 {
+    background-color: var(--clr-neutral-100);
+}
+
+.side-bar {
+    grid-column: 2 / 3;
+    background-color: transparent;
+}
+
+.main-container {
+    grid-column: 4 / 16;
 }
 
 .overflow-hidden {
@@ -20,7 +51,6 @@ button:hover {
     cursor: pointer;
 }
 
-.button-header,
 .view-code-button,
 .live-preview-button {
     background: none;
@@ -31,17 +61,11 @@ button:hover {
     position: relative;
 }
 
-.button-header {
-    color: var(--clr-neutral-100);
-}
-
-.button-header:hover,
 .view-code-button:hover,
 .live-preview-button:hover {
     cursor: pointer;
 }
 
-.button-header::after,
 .view-code-button::after,
 .live-preview-button::after {
     content: '';
@@ -55,7 +79,6 @@ button:hover {
     transition: transform 0.25s ease-out;
 }
 
-.button-header:hover::after,
 .view-code-button:hover::after,
 .live-preview-button:hover::after {
     transform: scaleX(1);
@@ -63,8 +86,8 @@ button:hover {
 }
 
 .active>button {
-    bottom: 0;
-    border-bottom: 2px solid var(--clr-primary);
+    color: var(--clr-neutral-1000);
+    border-left: var(--clr-primary) solid 0.2rem;
 }
 
 .max-width {
@@ -78,30 +101,23 @@ button:hover {
 }
 
 .header-button-container {
-    display: flex;
-    justify-content: end;
+    margin-top: 4rem;
 }
 
-.header-container {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
-    z-index: 1;
-}
+.header-container {}
 
-.header-container::before {
-    background-color: black;
-    opacity: 0.8;
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    pointer-events: none;
-    z-index: 0;
+.header-container::before {}
+
+.button-header {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-block: 0.5rem;
+    border-left: var(--clr-neutral-700) solid 0.2rem;
+    display: inline-block;
+    position: relative;
+    color: var(--font-color-700);
 }
 
 .home-background {
@@ -187,7 +203,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block: 4rem;
+    padding-block: 4rem;
+    border-bottom: 1px solid;
+    border-color: var(--clr-neutral-900);
 }
 
 .github-button,
@@ -205,8 +223,6 @@ button:hover {
 }
 
 .profile-bibliography {
-    background-color: var(--clr-neutral-100);
-    width: min(100%, 54rem);
     height: auto;
     color: black;
 }
@@ -214,17 +230,17 @@ button:hover {
 .home-about-me {
     font-size: 3rem;
     display: flex;
-    align-items: center;
     margin-bottom: 1rem;
 }
 
 .home-bibliography {
     display: flex;
     flex-direction: column;
+    width: min(60rem, 90%);
 }
 
 .home-bibliography div {
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 0 1rem 3rem;
     font-size: 1.25rem;
     line-height: 1.5;
 }
@@ -233,6 +249,7 @@ button:hover {
     display: flex;
     justify-content: end;
     margin-top: 2rem;
+    width: min(60rem, 90%);
 }
 
 .home-links a {
@@ -247,6 +264,7 @@ button:hover {
     gap: 5px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: min(60rem, 90%);
 }
 
 .skills-container div {
@@ -303,11 +321,7 @@ button:hover {
     background-image: url(./assets/c.svg);
 }
 
-.projects-bg {
-    --tw-bg-opacity: 1;
-    background-color: var(--clr-neutral-500);
-    background-color: rgb(243 244 246/var(--tw-bg-opacity));
-}
+.projects-bg {}
 
 .projects-container {
     display: grid;

@@ -1,3 +1,8 @@
+body,
+html {
+    font-size: 18px;
+}
+
 :root {
     --clr-primary: #00bd2d;
     --clr-neutral-100: #fff;
@@ -118,6 +123,10 @@ button:hover {
     display: inline-block;
     position: relative;
     color: var(--font-color-700);
+}
+
+.home-container {
+    aspect-ratio: 16 / 8;
 }
 
 .home-background {
@@ -286,11 +295,11 @@ button:hover {
 }
 
 .skills-logo {
-    background-image: url(./assets/react.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 4.444rem;
     width: 4.444rem;
+    background-size: 4.444rem 4.444rem;
 }
 
 .react-logo-svg {
@@ -564,67 +573,171 @@ button[type="submit"]:hover {
     color: var(--clr-neutral-100);
 }
 
-@media only screen and (min-width: 280px) {
+@media only screen and (min-device-width: 275px) and (max-device-width: 480px) {
     body,
     html {
-        font-size: 1px !important;
+        font-size: 11px;
+    }
+    .header-container {
+        display: none;
+    }
+    .grid-10 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .main-container {
+        grid-column: 1/10;
+    }
+    .home-bibliography {
+        width: 100%;
+    }
+    .github-button,
+    .linkedin-button {
+        font-size: 3.5rem;
+    }
+    .skills-container {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+    .skills-logo {
+        height: 2.444rem;
+        width: 2.444rem;
+        background-size: 2.444rem 2.444rem;
+        margin-top: 0.5rem;
+    }
+    .project-screenshot {
+        grid-column: 1 / 10;
+    }
+    .project-screenshot-opposite-2 {
+        grid-column: -1 / -10;
+    }
+    .project-info {
+        grid-column: 2 / -1;
+    }
+    .project-info-opposite {
+        grid-column: 1 / -2;
+    }
+    .project-info,
+    .project-info-opposite {
+        margin: 8rem 0 -5rem 0;
+        padding-block: 3rem;
+    }
+    .contact-container {
+        margin-inline: 3rem;
+    }
+    .contact-bg {
+        background-image: url(../src/assets/contact-bg-center.jpg);
     }
 }
 
-@media only screen and (min-width: 350px) {
+
+/* @media only screen and (min-width: 350px) {
     body,
     html {
-        font-size: 10.5px !important;
+        font-size: 10.5px;
     }
 }
 
 @media only screen and (min-width: 370px) {
     body,
     html {
-        font-size: 10px !important;
+        font-size: 10pxt;
     }
 }
 
 @media only screen and (min-width: 380px) {
     body,
     html {
-        font-size: 1px !important;
+        font-size: 1px;
     }
-}
+} */
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 961px) {
     body,
     html {
         font-size: 16px;
+    }
+    .header-container {
+        display: none;
+    }
+    .grid-10 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .main-container {
+        grid-column: 1/10;
+    }
+    .home-bibliography {
+        width: 100%;
+    }
+    .github-button,
+    .linkedin-button {
+        font-size: 3.5rem;
+    }
+    .skills-container {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+    .skills-logo {
+        height: 2.444rem;
+        width: 2.444rem;
+        background-size: 2.444rem 2.444rem;
+        margin-top: 0.5rem;
+    }
+    .project-screenshot {
+        grid-column: 1 / 10;
+    }
+    .project-screenshot-opposite-2 {
+        grid-column: -1 / -10;
+    }
+    .project-info {
+        grid-column: 2 / -1;
+    }
+    .project-info-opposite {
+        grid-column: 1 / -2;
+    }
+    .project-info,
+    .project-info-opposite {
+        margin: 8rem 0 -5rem 0;
+        padding-block: 3rem;
+    }
+    .contact-container {
+        margin-inline: 3rem;
+    }
+    .contact-bg {
+        background-image: url(../src/assets/contact-bg-center.jpg);
     }
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {
+
+/* @media only screen and (min-width: 992px) {
     body,
     html {
         font-size: 30px;
     }
-}
+} */
 
-@media only screen and (min-width: 1270px) {
+
+/* @media only screen and (min-width: 1270px) {
     body,
     html {
         font-size: 35px;
     }
-}
+} */
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1290px) {
+
+/* @media only screen and (min-width: 1290px) {
     body,
     html {
         font-size: 50px;
     }
-}
+} */

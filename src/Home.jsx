@@ -6,8 +6,11 @@ export default class Home extends Component {
         return (
                 <ParallaxBanner
                 layers={[
-                    { image: '../src/assets/pexels-daniel-putzer-633409.jpg', speed: -20, 
-                        className: "inset-0 home-background",
+                    { image: "https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", speed: -20, 
+                    className: "inset-0 home-background gradient",
+                    translateY: [0, 15],
+                    scale: [1, 1.1, "easeOutCubic"],
+                    shouldAlwaysCompleteAnimation: true
                     },
                     {
                         speed: -15,
@@ -30,6 +33,12 @@ export default class Home extends Component {
                                 </div>
                             </div>
                         ),
+                    },
+                    {
+                        opacity: [0, 1, "easeOutCubic"],
+                        shouldAlwaysCompleteAnimation: true,
+                        expanded: false,
+                        children: <div className="gradient inset" />
                     }
                   ]}
                 id="home"

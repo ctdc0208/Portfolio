@@ -32,7 +32,6 @@ export default class Home extends Component {
                         ),
                     }
                   ]}
-                style={{ aspectRatio: '16 / 8' }}
                 id="home"
                 factor={2}
                 className="home-container"

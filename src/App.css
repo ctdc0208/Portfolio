@@ -25,7 +25,6 @@ html {
 .grid-10 {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(3, auto);
     gap: 1rem;
 }
 
@@ -34,7 +33,7 @@ html {
 }
 
 .side-bar {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     background-color: transparent;
 }
 
@@ -126,7 +125,7 @@ button:hover {
 }
 
 .home-container {
-    aspect-ratio: 16 / 8;
+    aspect-ratio: 16 / 9;
 }
 
 .home-background {
@@ -238,14 +237,19 @@ button:hover {
 
 .home-about-me {
     font-size: 3rem;
-    display: flex;
     margin-bottom: 1rem;
+}
+
+.home-about-me,
+.my-works,
+.contact-me {
+    font-size: 2.5rem;
 }
 
 .home-bibliography {
     display: flex;
     flex-direction: column;
-    width: min(60rem, 90%);
+    margin-inline: 3rem;
 }
 
 .home-bibliography div {
@@ -258,7 +262,7 @@ button:hover {
     display: flex;
     justify-content: end;
     margin-top: 2rem;
-    width: min(60rem, 90%);
+    margin-inline: 3rem;
 }
 
 .home-links a {
@@ -273,7 +277,6 @@ button:hover {
     gap: 0.2777rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: min(60rem, 90%);
 }
 
 .skills-container div {
@@ -342,7 +345,6 @@ button:hover {
 .my-works {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    font-size: 3rem;
 }
 
 .projects-card {
@@ -495,7 +497,6 @@ button:hover {
 }
 
 .contact-me {
-    font-size: 2rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
@@ -585,24 +586,26 @@ button[type="submit"]:hover {
         grid-template-columns: repeat(9, 1fr);
     }
     .main-container {
-        grid-column: 1/10;
+        grid-column: 1 / 10;
     }
     .home-bibliography {
-        width: 100%;
+        margin-inline: 2rem;
+    }
+    .home-bibliography div {
+        margin: 1rem 0;
     }
     .github-button,
     .linkedin-button {
         font-size: 3.5rem;
     }
     .skills-container {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 1fr;
-        width: 100%;
+        grid-template-columns: repeat(7, 4rem);
+        grid-template-rows: 4rem;
     }
     .skills-logo {
-        height: 2.444rem;
-        width: 2.444rem;
-        background-size: 2.444rem 2.444rem;
+        height: 2rem;
+        width: 2rem;
+        background-size: 2rem 2rem;
         margin-top: 0.5rem;
     }
     .project-screenshot {
@@ -660,31 +663,98 @@ button[type="submit"]:hover {
     html {
         font-size: 16px;
     }
-    .header-container {
-        display: none;
+    .side-bar {
+        grid-column: 2 / 3;
+    }
+    .button-header {
+        padding-left: 0.5rem;
     }
     .grid-10 {
         grid-template-columns: repeat(9, 1fr);
     }
     .main-container {
-        grid-column: 1/10;
+        grid-column: 3 / 10;
     }
     .home-bibliography {
-        width: 100%;
+        margin-inline: 2rem;
+    }
+    .home-bibliography div {
+        margin: 1rem 0;
     }
     .github-button,
     .linkedin-button {
         font-size: 3.5rem;
     }
     .skills-container {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 1fr;
-        width: 100%;
+        grid-template-columns: repeat(7, 4rem);
+        grid-template-rows: 4rem;
     }
     .skills-logo {
-        height: 2.444rem;
-        width: 2.444rem;
-        background-size: 2.444rem 2.444rem;
+        height: 2rem;
+        width: 2rem;
+        background-size: 2rem 2rem;
+        margin-top: 0.5rem;
+    }
+    .project-screenshot {
+        grid-column: 1 / 10;
+    }
+    .project-screenshot-opposite-2 {
+        grid-column: -1 / -10;
+    }
+    .project-info {
+        grid-column: 2 / -1;
+    }
+    .project-info-opposite {
+        grid-column: 1 / -2;
+    }
+    .project-info,
+    .project-info-opposite {
+        margin: 8rem 0 -5rem 0;
+        padding-block: 3rem;
+    }
+    .contact-container {
+        margin-inline: 3rem;
+    }
+    .contact-bg {
+        background-image: url(../src/assets/contact-bg-center.jpg);
+    }
+}
+
+@media only screen and (min-device-width: 962px) and (max-device-width: 1025px) {
+    body,
+    html {
+        font-size: 16px;
+    }
+    .side-bar {
+        grid-column: 2 / 3;
+    }
+    .button-header {
+        padding-left: 0.5rem;
+    }
+    .grid-10 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .main-container {
+        grid-column: 3 / 10;
+    }
+    .home-bibliography {
+        margin-inline: 2rem;
+    }
+    .home-bibliography div {
+        margin: 1rem 0;
+    }
+    .github-button,
+    .linkedin-button {
+        font-size: 3.5rem;
+    }
+    .skills-container {
+        grid-template-columns: repeat(7, 5rem);
+        grid-template-rows: 5rem;
+    }
+    .skills-logo {
+        height: 3rem;
+        width: 3rem;
+        background-size: 3rem 3rem;
         margin-top: 0.5rem;
     }
     .project-screenshot {

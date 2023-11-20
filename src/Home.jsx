@@ -6,8 +6,9 @@ export default class Home extends Component {
         return (
                 <ParallaxBanner
                 layers={[
-                    { image: "../src/assets/wallpaper.png", speed: -20, 
-                    className: "inset-0 home-background gradient",
+                    { image: "../src/assets/wallpaper.png", speed: -20,
+                    color: "black",
+                    className: "inset-0 home-background",
                     translateY: [0, 15],
                     scale: [1, 1.1, "easeOutCubic"],
                     shouldAlwaysCompleteAnimation: true

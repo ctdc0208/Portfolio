@@ -6,7 +6,7 @@ export default class Home extends Component {
         return (
                 <ParallaxBanner
                 layers={[
-                    { image: "https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", speed: -20, 
+                    { image: "../src/assets/wallpaper.png", speed: -20, 
                     className: "inset-0 home-background gradient",
                     translateY: [0, 15],
                     scale: [1, 1.1, "easeOutCubic"],
@@ -16,7 +16,7 @@ export default class Home extends Component {
                         speed: -15,
                         className: "inset-0",
                         children: (
-                            <div className="inset-0 max-width">
+                            <div className="inset-0">
                                 <div className="home-name">
                                     <div className="first-name">
                                     Christian

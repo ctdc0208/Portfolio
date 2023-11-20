@@ -4,9 +4,10 @@ html {
 }
 
 :root {
-    --clr-primary: #00bd2d;
+    --clr-primary: #8cbed9;
     --clr-neutral-100: #fff;
     --clr-neutral-300: #f5f5f5;
+    --clr-neutral-400: #f9fbfc;
     --clr-neutral-600: #f3f4f6;
     --clr-neutral-700: #d8d8d8;
     --clr-neutral-900: #696969;
@@ -29,7 +30,7 @@ html {
 }
 
 .bg-100 {
-    background-color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-400);
 }
 
 .side-bar {
@@ -125,7 +126,7 @@ button:hover {
 }
 
 .home-container {
-    height: 80vh;
+    height: 100vh;
 }
 
 .home-background {
@@ -151,11 +152,7 @@ button:hover {
 .home-name {
     color: var(--clr-neutral-100);
     overflow: hidden;
-    position: relative;
-    top: 45%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-inline: auto;
+    margin: 5rem 0 0 5rem;
     width: max-content;
     border-bottom: 0.1666rem solid var(--clr-neutral-100);
 }
@@ -165,15 +162,15 @@ button:hover {
 }
 
 .last-name {
-    margin-left: 10rem;
+    margin-left: 4rem;
 }
 
 .web-name {
-    margin-left: 20rem;
+    margin-left: 8rem;
 }
 
 .developer-name {
-    margin-left: 30rem;
+    margin-left: 12rem;
 }
 
 .first-name,

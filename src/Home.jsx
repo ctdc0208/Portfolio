@@ -20,7 +20,7 @@ export default class Home extends Component {
                         children: (
                             <div className="inset-0 grid-12">
                                     <div className="home-padding-top top-container">
-                                        <div className="display-flex-row justify-content-space-between title-container">
+                                        <div className="display-flex-row justify-content-space-between title-container align-items-center">
                                             <div className="dev-icon svg-icon"></div>
                                             <div className="main-color-font title-text">Web Developer</div>
                                         </div>
@@ -29,7 +29,7 @@ export default class Home extends Component {
                                         </div>
                                     </div>
                                     <div className="middle-container">
-                                        <div className="display-flex-row tools-title-container justify-content-space-between align-items-center">
+                                        <div className="display-flex-row tools-title-container align-items-center">
                                             <div className="tools-icon svg-icon"></div>
                                             <div className="light-color-font tools-title-text">Tools I Use</div>
                                         </div>

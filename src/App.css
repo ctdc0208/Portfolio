@@ -596,8 +596,22 @@ button:hover {
     box-shadow: 1.1111rem 1.1111rem 0 0 var(--clr-neutral-600), 1.1111rem 1.1111rem 0 0.1388rem var(--clr-primary);
 }
 
+.project-screenshot-shopping {
+    background-image: url(./assets/Shopping.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-screenshot-message-board {
+    background-image: url(./assets/Mini-message-board.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .project-screenshot-1 {
-    background-image: url(./assets/cv-application-sc.png);
+    background-image: url(./assets/CV-Application.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -606,6 +620,12 @@ button:hover {
 .project-screenshot-opposite-2 {
     grid-column: -1 / -8;
     box-shadow: -1.1111rem 1.1111rem 0 0 var(--clr-neutral-600), -1.1111rem 1.1111rem 0 0.1388rem var(--clr-primary);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-screenshot-weather {
     background-image: url(./assets/weather-app-sc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -646,7 +666,7 @@ button:hover {
     color: var(--clr-neutral-100);
     background-image: url(../src/assets/contact-bg.jpg);
     background-size: cover;
-    height: 45.55rem;
+    height: 50.55rem;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -781,7 +801,7 @@ button[type="submit"]:hover {
 @media only screen and (min-device-width: 1440px) {
     body,
     html {
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
 }
 

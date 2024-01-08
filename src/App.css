@@ -829,6 +829,9 @@ button[type="submit"]:hover {
     .home-background {
         background-image: url(../src/assets/Portrait.png);
     }
+    .header-container {
+        display: none;
+    }
     .grid-12 {
         grid-template-columns: repeat(12, 2rem);
         grid-template-rows: repeat(12, 1fr);
@@ -863,7 +866,7 @@ button[type="submit"]:hover {
         margin-left: 0.5rem;
     }
     .tools-container {
-        height: 10.55955rem;
+        height: 12.55955rem;
     }
     .tools-container img {
         height: 1.65rem;
@@ -978,7 +981,7 @@ button[type="submit"]:hover {
         font-size: 1.25rem;
     }
     .tools-container {
-        height: 10.10106rem;
+        height: 13.10106rem;
         width: 35rem;
     }
     .tools-container img {
@@ -1080,7 +1083,7 @@ button[type="submit"]:hover {
         font-size: 1.4rem;
     }
     .tools-container {
-        height: 14.10106rem;
+        height: 17.10106rem;
         width: 47rem;
     }
     .tools-container img {

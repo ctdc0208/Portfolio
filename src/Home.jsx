@@ -36,23 +36,25 @@ export default class Home extends Component {
                                         <div className="tools-borderline"></div>
                                         <div className="tools-container">
                                             <div>
-                                                <img src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React Badge" />
-                                                <img src="https://img.shields.io/badge/Webpack-334047?style=for-the-badge&logo=Webpack&logoColor=%238DD6F9" alt="Webpack Badge" />
-                                                <img src="https://img.shields.io/badge/node.js-white?style=for-the-badge&logo=node.js&logoColor=%23339933" alt="Node.js Badge" />
-                                                <img src="https://img.shields.io/badge/NPM-white?style=for-the-badge&logo=npm&logoColor=cd3e3d" alt="NPM Badge" />
-                                                <img src="https://img.shields.io/badge/Jest-413d3e?style=for-the-badge&logo=Jest&logoColor=%23C21325" alt="Jest Badge" />
+                                                <img src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
+                                                <img src="https://img.shields.io/badge/Webpack-334047?style=for-the-badge&logo=Webpack&logoColor=%238DD6F9" alt="Webpack" />
+                                                <img src="https://img.shields.io/badge/node.js-white?style=for-the-badge&logo=node.js&logoColor=%23339933" alt="Node.js" />
+                                                <img src="https://img.shields.io/badge/Express-6a6a7c?style=for-the-badge&logo=Express&logoColor=%23000000" alt="Express.js" />
+                                                <img src="https://img.shields.io/badge/MongoDB-082532?style=for-the-badge&logo=MongoDB&logoColor=%2347A248" alt="MongoDB" />
+                                                <img src="https://img.shields.io/badge/NPM-white?style=for-the-badge&logo=npm&logoColor=cd3e3d" alt="NPM" />
+                                                <img src="https://img.shields.io/badge/Jest-413d3e?style=for-the-badge&logo=Jest&logoColor=%23C21325" alt="Jest" />
                                             </div>
                                             <div>
-                                                <img src="https://img.shields.io/badge/JAVASCRIPT-413d3e?style=for-the-badge&logo=JavaScript&logoColor=%23F7DF1E" alt="JavaScript Badge" />
-                                                <img src="https://img.shields.io/badge/HTML-white?style=for-the-badge&logo=HTML5&logoColor=E34F26" alt="HTML Badge" />
-                                                <img src="https://img.shields.io/badge/CSS-3fc0ff?style=for-the-badge&logo=CSS3&logoColor=%231572B6" alt="CSS Badge" />
+                                                <img src="https://img.shields.io/badge/JAVASCRIPT-413d3e?style=for-the-badge&logo=JavaScript&logoColor=%23F7DF1E" alt="JavaScript" />
+                                                <img src="https://img.shields.io/badge/HTML-white?style=for-the-badge&logo=HTML5&logoColor=E34F26" alt="HTML" />
+                                                <img src="https://img.shields.io/badge/CSS-3fc0ff?style=for-the-badge&logo=CSS3&logoColor=%231572B6" alt="CSS" />
                                             </div>
                                             <div>
-                                                <img src="https://img.shields.io/badge/Git-0d2034?style=for-the-badge&logo=Git&logoColor=%23F05032" alt="Git Badge" />
-                                                <img src="https://img.shields.io/badge/GITHUB-white?style=for-the-badge&logo=GitHub&logoColor=%23181717" alt="GitHub Badge" />
+                                                <img src="https://img.shields.io/badge/Git-0d2034?style=for-the-badge&logo=Git&logoColor=%23F05032" alt="Git" />
+                                                <img src="https://img.shields.io/badge/GITHUB-white?style=for-the-badge&logo=GitHub&logoColor=%23181717" alt="GitHub" />
                                                 <img src="https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=Figma&logoColor=%23F24E1E" alt="Figma" />
-                                                <img src="https://img.shields.io/badge/REST_API-09b7e7?style=for-the-badge" alt="REST API Badge" />
-                                                <img src="https://img.shields.io/badge/esLINT-0d0d1f?style=for-the-badge&logo=ESLint&logoColor=%234B32C3" alt="esLINT Badge" />
+                                                <img src="https://img.shields.io/badge/REST_API-09b7e7?style=for-the-badge" alt="REST API" />
+                                                <img src="https://img.shields.io/badge/esLINT-0d0d1f?style=for-the-badge&logo=ESLint&logoColor=%234B32C3" alt="esLINT" />
                                             </div>
                                         </div>
                                     </div>

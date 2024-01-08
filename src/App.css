@@ -293,6 +293,12 @@ button:hover {
     margin: 0.5rem;
 }
 
+.tools-used img {
+    height: 1.95rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border-radius: 10px;
+}
+
 .tools-container img {
     margin: 0.25rem;
 }
@@ -1176,7 +1182,7 @@ button[type="submit"]:hover {
         font-size: 1.25rem;
     }
     .tools-container {
-        height: 10.10106rem;
+        height: 13.10106rem;
         width: 35rem;
     }
     .tools-container img {

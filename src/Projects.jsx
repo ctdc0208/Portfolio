@@ -22,6 +22,11 @@ export default class Projects extends Component {
                             <div className="project-description">
                                 A Simple Shopping Page created using React JS.
                             </div>
+                            <div className="tools-used">
+                                <img src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
+                                <img src="https://img.shields.io/badge/REST_API-09b7e7?style=for-the-badge" alt="REST API" />
+                                <img src="https://img.shields.io/badge/Webpack-334047?style=for-the-badge&logo=Webpack&logoColor=%238DD6F9" alt="Webpack" />
+                            </div>
                         </div>
                     </div>
                     <div className="projects-card">
@@ -35,6 +40,11 @@ export default class Projects extends Component {
                             </div>
                             <div className="project-description"> 
                                 A Express JS super simple message board.
+                            </div>
+                            <div className="tools-used">
+                                <img src="https://img.shields.io/badge/node.js-0e4158?style=for-the-badge&logo=node.js&logoColor=%23339933" alt="Node.js" />
+                                <img src="https://img.shields.io/badge/Express-6a6a7c?style=for-the-badge&logo=Express&logoColor=%23000000" alt="Express.js" />
+                                <img src="https://img.shields.io/badge/MongoDB-082532?style=for-the-badge&logo=MongoDB&logoColor=%2347A248" alt="MongoDB" />
                             </div>
                         </div>
                     </div>
@@ -51,6 +61,10 @@ export default class Projects extends Component {
                             <div className="project-description">
                             A CV Application designed to help individuals create and manage their professional resumes.
                             </div>
+                            <div className="tools-used">
+                                <img src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
+                                <img src="https://img.shields.io/badge/Redux-363636?style=for-the-badge&logo=Redux&logoColor=%23764ABC" alt="Redux" />
+                            </div>
                         </div>
                     </div>
                     <div className="projects-card">
@@ -66,6 +80,11 @@ export default class Projects extends Component {
                             <div className="project-description"> 
                                 A weather forecast site using the OpenWeatherMap Weather API.
                             </div>
+                            <div className="tools-used">
+                                <img src="https://img.shields.io/badge/JAVASCRIPT-413d3e?style=for-the-badge&logo=JavaScript&logoColor=%23F7DF1E" alt="JavaScript" />
+                                <img src="https://img.shields.io/badge/CSS-3fc0ff?style=for-the-badge&logo=CSS3&logoColor=%231572B6" alt="CSS" />
+                                <img src="https://img.shields.io/badge/HTML-c1dcfc?style=for-the-badge&logo=HTML5&logoColor=E34F26" alt="HTML" />
+                            </div>
                         </div>
                     </div>
                     <div className="projects-card">
@@ -78,7 +97,11 @@ export default class Projects extends Component {
                                 </div>
                             </div>
                             <div className="project-description">
-                            Designed an Arduino-based speed controller system for precise control of DC motor speeds.
+                                Designed an Arduino-based speed controller system for precise control of DC motor speeds.
+                            </div>
+                            <div className="tools-used">
+                                <img src="https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=Arduino&logoColor=%23ffffff" alt="Arduino" />
+                                <img src="https://img.shields.io/badge/C%2B%2B-272727?style=for-the-badge&logo=C%2B%2B&logoColor=%2300599C" alt="Arduino" />
                             </div>
                         </div>
                     </div>

@@ -1,18 +1,17 @@
 import './App.css'
-import Navbar from './Navbar'
-import Home from './Home'
+import Header from './Header'
 import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
-import { ParallaxProvider } from 'react-scroll-parallax'
 
 function App() {
   return (
-    <ParallaxProvider>
-        <Home />
+    <>
+      <Header />
+      <div className='content'>
+
         <div className='grid-10 bg-100'>
-          <Navbar />
           <div className='main-container'>
             <About />
             <Projects />
@@ -20,7 +19,8 @@ function App() {
         </div>
             <Contact />
             <Footer />
-    </ParallaxProvider>
+      </div>
+    </>
   )
 }
 

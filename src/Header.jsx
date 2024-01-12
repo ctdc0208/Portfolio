@@ -6,7 +6,7 @@ export default function Header() {
         <div className="sticky-header">
             <div className="header-container box-shadow">
                 <div className="header-name font-700">Christian.dev</div>
-                <div>
+                <div className="button-header-container">
                     <Link activeClass="active" className="button-header .font-400" to="home" spy={true} smooth={true} offset={-250} duration={500}>
                         Home
                     </Link>

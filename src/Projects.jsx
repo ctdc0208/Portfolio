@@ -11,7 +11,7 @@ export default function Projects() {
                 <div className="project-screenshot project-screenshot-shopping box-shadow"></div>
                 <div className="project-info-container">
                     <div className="project-title font-700">
-                        Shopping Page
+                        SHOPPING PAGE
                     </div>
                     <div className="project-description font-400">
                         A simple shopping page focused on creating a delightful user experience, I meticulously designed an intuitive interface with cohesive styling for seamless navigation.  This project represents my commitment to delivering user-friendly and technically sound web applications.
@@ -35,10 +35,10 @@ export default function Projects() {
             </div>
             <div className="project-container project-two-container project-column">
                 <div className="project-info-container">
-                    <div className="project-title">
+                    <div className="project-title font-700">
                         CV APPLICATION
                     </div>
-                    <div className="project-description">
+                    <div className="project-description font-400">
                         CV Application platform to elevate your professional presence. A user-centric design that offers a seamless and intuitive experience to help you create a standout CV effortlessly.
                     </div>
                     <div className="tech-stack-used-container">
@@ -61,10 +61,10 @@ export default function Projects() {
             <div className="project-container project-three-container">
                 <div className="project-screenshot project-screenshot-Weather-App box-shadow"></div>
                 <div className="project-info-container">
-                    <div className="project-title">
+                    <div className="project-title font-700">
                         WEATHER APP
                     </div>
-                    <div className="project-description">
+                    <div className="project-description font-400">
                     Stay ahead of changing weather patterns and plan your days with precision using a Weather
 App. Real-time weather data with a user-friendly search feature, obtain detailed weather information for any city. Receive accurate current time and forecast information for
 upcoming days.
@@ -88,10 +88,10 @@ upcoming days.
             </div>
             <div className="project-container project-four-container project-column">
                 <div className="project-info-container">
-                    <div className="project-title">
+                    <div className="project-title font-700">
                         MESSAGE-BOARD
                     </div>
-                    <div className="project-description">
+                    <div className="project-description font-400">
                     A Mini-Message board built using Node.js.  Through the implementation of routes and asynchronous database operations, I ensured smooth interactions within the platform.
                     </div>
                     <div className="tech-stack-used-container">

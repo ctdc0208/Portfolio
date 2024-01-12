@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <div className="contact-grid-12" id="contact">
             <div className="contact-container ">
-                <div className="contact-me font-700">About Me</div>
+                <div className="contact-me font-700">Contact Me</div>
                 <div className="contact-intro font-600">Don&apos;t be shy! Hit me up! 👇</div>
                 <div className="home-contact-links">
                     <a className="linkedin-icon" href="https://www.linkedin.com/in/ctdc0208" target="_blank" rel="noreferrer"></a>

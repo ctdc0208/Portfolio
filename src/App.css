@@ -537,6 +537,316 @@ html {
 /* End - Footer styles */
 
 
+/* Start - Responsive styles */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 0 1.25rem;
+    }
+    .button-header-container {
+        display: none;
+    }
+    .home-grid-12 {
+        grid-template-columns: repeat(12, 1.6rem);
+        grid-template-rows: repeat(12, 1fr);
+        column-gap: 0.078rem;
+    }
+    .title-container {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    .dev-icon {
+        width: 4.70156rem;
+        height: 3.79806rem;
+        margin-right: .62rem;
+    }
+    .home-title {
+        width: 14.7365rem;
+        height: 4.9375rem;
+        font-size: 2rem;
+    }
+    .title-text {
+        grid-column: 1 / -1;
+        font-size: 1rem;
+    }
+    .home-contact-links {
+        grid-column: 1 / -1;
+        padding-top: 3rem;
+    }
+    .tech-stack-container {
+        grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: start;
+    }
+    .tech-stack-title {
+        padding-right: 0;
+        padding-bottom: 0.56rem;
+        border-right: none;
+        border-bottom: 1px solid var(--clr-neutral-1000);
+    }
+    .home-icon-container {
+        flex-direction: row;
+        align-items: start;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .home-icon-container div {
+        margin-right: 0.85rem;
+    }
+    .html-icon {
+        height: 2.11925rem;
+        width: 2.11925rem;
+    }
+    .css-icon {
+        height: 2.11925rem;
+        width: 1.8545rem;
+    }
+    .js-icon {
+        height: 2.11925rem;
+        width: 2.11925rem;
+    }
+    .react-icon {
+        width: 2.37956rem;
+        height: 2.11925rem;
+    }
+    .node-icon {
+        width: 1.87006rem;
+        height: 2.11925rem;
+    }
+    .mongodb-icon {
+        width: 0.95206rem;
+        height: 2.11925rem;
+    }
+    .express-icon {
+        height: 2.11925rem;
+        width: 2.11925rem;
+    }
+    .about-container {
+        padding: 6rem 1.8rem;
+        flex-direction: column;
+    }
+    .profile-picture-container {
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    .about-info-container {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        width: 20.0625rem;
+    }
+    .projects-grid-12 {
+        grid-template-columns: repeat(12, 1.6rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+        justify-content: center;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 2rem 0.37rem;
+    }
+    .project-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .project-screenshot {
+        width: 19.375rem;
+        height: 10.89425rem;
+    }
+    .project-info-container {
+        margin: 2.5rem 0;
+    }
+    .contact-grid-12 {
+        grid-template-columns: repeat(12, 1.6rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+    }
+    .contacts-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .contact-text-2 {
+        font-size: 1rem;
+    }
+    .contacts-info-inner-container {
+        align-items: center;
+    }
+    .location-icon {
+        width: 2.5rem;
+        height: 3.3125rem;
+    }
+    .email-icon {
+        width: 2.5rem;
+        height: 2.013rem;
+    }
+    .contacts-info-2nd-inner-container {
+        height: 3.3125rem;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .header-container {
+        padding: 0 1.88rem;
+    }
+    .home-grid-12 {
+        grid-template-columns: repeat(12, 3.7rem);
+        grid-template-rows: repeat(12, 1fr);
+        column-gap: 0.078rem;
+    }
+    .title-container {
+        grid-column: 2 / -1;
+        grid-row: 3 / 4;
+    }
+    .dev-icon {
+        width: 8rem;
+        height: 6.375rem;
+        margin-right: 1.25rem;
+    }
+    .home-title {
+        width: 29.875rem;
+        height: 9.75rem;
+        font-size: 4rem;
+    }
+    .title-text {
+        grid-column: 2 / 9;
+        font-size: 1.25rem;
+    }
+    .home-contact-links {
+        grid-column: 2 / -1;
+        padding-top: 3rem;
+    }
+    .tech-stack-container {
+        grid-column: 2 / -1;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tech-stack-title {
+        padding-right: 2rem;
+    }
+    .home-icon-container {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    .home-icon-container div {
+        margin-right: 1.35rem;
+    }
+    .html-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    .css-icon {
+        height: 3rem;
+        width: 2.62519rem;
+    }
+    .js-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    .react-icon {
+        width: 3.36844rem;
+        height: 3rem;
+    }
+    .node-icon {
+        width: 2.625rem;
+        height: 3rem;
+    }
+    .mongodb-icon {
+        width: 1.34769rem;
+        height: 3rem;
+    }
+    .express-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    .about-container {
+        padding: 8rem 2.8rem;
+    }
+    .profile-picture-container {
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    .about-info-container {
+        margin-left: 2rem;
+        width: 22.27406rem;
+    }
+    .projects-grid-12 {
+        grid-template-columns: repeat(12, 3.7rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+        justify-content: center;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 2.56rem;
+    }
+    .project-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .project-screenshot {
+        height: 22.3125rem;
+    }
+    .project-info-container {
+        margin: 2.5rem 3rem 0;
+    }
+    .contact-grid-12 {
+        grid-template-columns: repeat(12, 2.7rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+    }
+    .contacts-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .contact-text-1 {
+        font-size: 1.25rem;
+    }
+    .contact-text-2 {
+        font-size: 1.25rem;
+    }
+    .contacts-info-inner-container {
+        align-items: center;
+    }
+    .location-icon {
+        width: 2.5rem;
+        height: 3.3125rem;
+    }
+    .email-icon {
+        width: 2.5rem;
+        height: 2.013rem;
+    }
+    .contacts-info-2nd-inner-container {
+        margin-left: 1rem;
+        height: 3.3125rem;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
+
+
 /* 
 .grid-10 {
     display: grid;

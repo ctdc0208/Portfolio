@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div className="contact-grid-12" id="about">
+        <div className="contact-grid-12" id="contact">
             <div className="contact-container ">
                 <div className="contact-me">About Me</div>
                 <div className="contact-intro">Don&apos;t be shy! Hit me up! 👇</div>

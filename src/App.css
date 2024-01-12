@@ -69,7 +69,6 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3.75rem;
     height: 4.6875rem;
     background-color: var(--clr-neutral-100);
 }
@@ -251,8 +250,12 @@ html {
 .profile-picture-container {
     width: 21.875rem;
     height: 21.875rem;
+    border-radius: 50%;
     flex-shrink: 0;
-    background-color: #000;
+    background-image: url(../src/assets/DELA\ CRUZ\,\ CHRISTIAN\ T\ b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .about-info-container {
@@ -658,6 +661,9 @@ html {
     .project-info-container {
         margin: 2.5rem 0;
     }
+    .tech-stack-used-container img {
+        width: 30%;
+    }
     .contact-grid-12 {
         grid-template-columns: repeat(12, 1.6rem);
         grid-template-rows: repeat(auto, 1.25rem);
@@ -691,12 +697,150 @@ html {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .header-container {
+        padding: 0 1.88rem;
+    }
+    .home-grid-12 {
+        grid-template-columns: repeat(12, 3.7rem);
+        grid-template-rows: repeat(12, 1fr);
+        column-gap: 0.078rem;
+    }
+    .title-container {
+        grid-column: 2 / -1;
+        grid-row: 3 / 4;
+    }
+    .dev-icon {
+        width: 8rem;
+        height: 6.375rem;
+        margin-right: 1.25rem;
+    }
+    .home-title {
+        width: 29.875rem;
+        height: 9.75rem;
+        font-size: 4rem;
+    }
+    .title-text {
+        grid-column: 2 / 9;
+        font-size: 1.25rem;
+    }
+    .home-contact-links {
+        grid-column: 2 / -1;
+        padding-top: 3rem;
+    }
+    .tech-stack-container {
+        grid-column: 2 / -1;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tech-stack-title {
+        padding-right: 2rem;
+    }
+    .home-icon-container {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    .home-icon-container div {
+        margin-right: 1.35rem;
+    }
+    .html-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    .css-icon {
+        height: 3rem;
+        width: 2.62519rem;
+    }
+    .js-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    .react-icon {
+        width: 3.36844rem;
+        height: 3rem;
+    }
+    .node-icon {
+        width: 2.625rem;
+        height: 3rem;
+    }
+    .mongodb-icon {
+        width: 1.34769rem;
+        height: 3rem;
+    }
+    .express-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    .about-container {
+        padding: 8rem 2.8rem;
+    }
+    .profile-picture-container {
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    .about-info-container {
+        margin-left: 2rem;
+        width: 22.27406rem;
+    }
+    .projects-grid-12 {
+        grid-template-columns: repeat(12, 3.7rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+        justify-content: center;
+    }
+    .project-container {
+        flex-direction: column;
+        padding: 2.56rem;
+    }
+    .project-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .project-screenshot {
+        height: 22.3125rem;
+    }
+    .project-info-container {
+        margin: 2.5rem 3rem 0;
+    }
+    .contact-grid-12 {
+        grid-template-columns: repeat(12, 2.7rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+    }
+    .contacts-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .contact-text-1 {
+        font-size: 1.25rem;
+    }
+    .contact-text-2 {
+        font-size: 1.25rem;
+    }
+    .contacts-info-inner-container {
+        align-items: center;
+    }
+    .location-icon {
+        width: 2.5rem;
+        height: 3.3125rem;
+    }
+    .email-icon {
+        width: 2.5rem;
+        height: 2.013rem;
+    }
+    .contacts-info-2nd-inner-container {
+        margin-left: 1rem;
+        height: 3.3125rem;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .header-container {
         padding: 0 1.88rem;
     }
@@ -839,12 +983,197 @@ html {
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .header-container {
+        padding: 0 3.75rem;
+    }
+    .home-grid-12 {
+        grid-template-columns: repeat(12, 5.688rem);
+        grid-template-rows: repeat(12, 1fr);
+        column-gap: 0.078rem;
+    }
+    .title-container {
+        grid-column: 3 / -1;
+        grid-row: 3 / 4;
+    }
+    .dev-icon {
+        height: 6.375rem;
+        width: 8rem;
+        margin-right: 1.25rem;
+    }
+    .home-title {
+        width: 29.875rem;
+        height: 9.75rem;
+        font-size: 4rem;
+    }
+    .title-text {
+        grid-column: 3 / 8;
+        font-size: 1.25rem;
+    }
+    .home-contact-links {
+        grid-column: 3 / 5;
+        padding-top: 2.5rem;
+    }
+    .tech-stack-container {
+        grid-column: 3 / -1;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tech-stack-title {
+        padding-right: 2.25rem;
+    }
+    .home-icon-container {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2.25rem;
+    }
+    .home-icon-container div {
+        margin-right: 1.25rem;
+    }
+    .html-icon {
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+    .css-icon {
+        height: 3.75rem;
+        width: 3.2815rem;
+    }
+    .js-icon {
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+    .react-icon {
+        width: 4.2105rem;
+        height: 3.75rem;
+    }
+    .node-icon {
+        height: 3.75rem;
+        width: 3.32181rem;
+    }
+    .mongodb-icon {
+        height: 3.75rem;
+        width: 1.68456rem;
+    }
+    .express-icon {
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+    .about-container {
+        padding: 10.9375rem 0;
+    }
+    .profile-picture-container {
+        width: 21.875rem;
+        height: 21.875rem;
+    }
+    .about-info-container {
+        margin-left: 4.94rem;
+        width: 26.25rem;
+    }
+    .projects-grid-12 {
+        grid-template-columns: repeat(12, 5.388rem);
+        grid-template-rows: repeat(auto, 5rem);
+        column-gap: 0.078rem;
+        justify-content: center;
+    }
+    .project-container {
+        flex-direction: row;
+        padding: 2.25rem;
+    }
+    .project-screenshot {
+        height: 20.3125rem;
+    }
+    .tech-stack-used-container img {
+        width: 6.063rem;
+        height: 1.749rem;
+    }
+    .contact-grid-12 {
+        grid-template-columns: repeat(12, 4.688rem);
+        grid-template-rows: repeat(auto, 1.25rem);
+        column-gap: 0.078rem;
+    }
+    .contacts-info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contacts-info-inner-container {
+        align-items: center;
+    }
+    .location-icon {
+        width: 2.625rem;
+        height: 3.3125rem;
+    }
+    .email-icon {
+        width: 4.11394rem;
+        height: 3.3125rem;
+    }
+    .contact-text-1 {
+        font-size: 1rem;
+    }
+    .contact-text-2 {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Responsive Font Sizes */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 400px) {
+    body,
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    body,
+    html {
+        font-size: 15px;
+    }
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    body,
+    html {
+        font-size: 16px;
+    }
+}
 
 
 /* 

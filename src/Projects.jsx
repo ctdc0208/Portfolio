@@ -92,20 +92,25 @@ upcoming days.
                         MESSAGE-BOARD
                     </div>
                     <div className="project-description font-400">
-                    A Mini-Message board built using Node.js.  Through the implementation of routes and asynchronous database operations, I ensured smooth interactions within the platform.
+                        A Mini-Message board built using Node.js.  Through the implementation of routes and asynchronous database operations, I ensured smooth interactions within the platform.
                     </div>
                     <div className="tech-stack-used-container">
                         <img className="box-shadow" src="https://img.shields.io/badge/node.js-0e4158?style=for-the-badge&logo=node.js&logoColor=%23339933" alt="Node.js" />
-                        <img className="box-shadow" src="https://img.shields.io/badge/Express-6a6a7c?style=for-the-badge&logo=Express&logoColor=%23000000" alt="Express.js" />                                 <img src="https://img.shields.io/badge/MongoDB-082532?style=for-the-badge&logo=MongoDB&logoColor=%2347A248" alt="MongoDB" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/Express-6a6a7c?style=for-the-badge&logo=Express&logoColor=%23000000" alt="Express.js" />                                 
+                        <img className="box-shadow" src="https://img.shields.io/badge/MongoDB-082532?style=for-the-badge&logo=MongoDB&logoColor=%2347A248" alt="MongoDB" />
                     </div>
                     <div className="project-links">
-                        <a className="project-link-button" href="https://github.com/ctdc0208/Mini-Message-Board" target="_blank" rel="noreferrer">
+                        <a className="project-link-button" href="https://github.com/ctdc0208/CV-Application" target="_blank" rel="noreferrer">
                             <div className="project-github-icon svg-icon"></div>
                             <div className="project-link-button-text font-500">Code</div>
                         </a>
+                        <a className="project-link-button" href="https://ctdc0208.github.io/CV-Application" target="_blank" rel="noreferrer">
+                            <div className="live-demo-icon svg-icon"></div>
+                            <div className="project-link-button-text font-500">Live Demo</div>
+                        </a>
                     </div>
                 </div>
-                <div className="project-screenshot project-screenshot-Message-Board box-shadow"></div>
+                <div className="project-screenshot project-screenshot-CV-Application box-shadow"></div>
             </div>
         </div>
     )

@@ -7,8 +7,8 @@ export default function Home() {
             </div>
             <div className="title-text font-400">Hi, I&apos;m Christian dela Cruz. A Front-End Web Developer based in Cavite, Philippines.</div>
             <div className="home-contact-links">
-                <a className="linkedin-icon" href="https://www.linkedin.com/in/ctdc0208" target="_blank" rel="noreferrer"></a>
-                <a className="github-icon" href="https://github.com/ctdc0208" target="_blank" rel="noreferrer"></a>
+                <a className="linkedin-icon svg-icon" href="https://www.linkedin.com/in/ctdc0208" target="_blank" rel="noreferrer"></a>
+                <a className="github-icon svg-icon" href="https://github.com/ctdc0208" target="_blank" rel="noreferrer"></a>
             </div>
             <div className="tech-stack-container">
                 <div className="tech-stack-title font-400">Tech Stack</div>

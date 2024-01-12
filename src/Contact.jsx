@@ -5,8 +5,8 @@ export default function Contact() {
                 <div className="contact-me font-700">Contact Me</div>
                 <div className="contact-intro font-600">Don&apos;t be shy! Hit me up! 👇</div>
                 <div className="home-contact-links">
-                    <a className="linkedin-icon" href="https://www.linkedin.com/in/ctdc0208" target="_blank" rel="noreferrer"></a>
-                    <a className="github-icon" href="https://github.com/ctdc0208" target="_blank" rel="noreferrer"></a>
+                    <a className="linkedin-icon svg-icon" href="https://www.linkedin.com/in/ctdc0208" target="_blank" rel="noreferrer"></a>
+                    <a className="github-icon svg-icon" href="https://github.com/ctdc0208" target="_blank" rel="noreferrer"></a>
                 </div>
                 <div className="contacts-info-container">
                     <div className="contacts-info-inner-container">

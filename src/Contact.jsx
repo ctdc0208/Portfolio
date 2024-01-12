@@ -12,15 +12,15 @@ export default function Contact() {
                     <div className="contacts-info-inner-container">
                         <div className="location-icon svg-icon"></div>
                         <div className="contacts-info-2nd-inner-container">
-                            <div className="contact-text-1">Location</div>
-                            <div className="contact-text-2">Cavite, Philippines</div>
+                            <div className="contact-text-1 font-700">Location</div>
+                            <div className="contact-text-2 font-600">Cavite, Philippines</div>
                         </div>
                     </div>
                     <div className="contacts-info-inner-container">
                         <div className="email-icon svg-icon"></div>
                         <div className="contacts-info-2nd-inner-container">
-                            <div className="contact-text-1">Email</div>
-                            <div className="contact-text-2">christiantulao.delacruz@gmail.com</div>
+                            <div className="contact-text-1 font-700">Email</div>
+                            <div className="contact-text-2 font-600">christiantulao.delacruz@gmail.com</div>
                         </div>
                     </div>
                 </div>

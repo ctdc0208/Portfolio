@@ -504,23 +504,17 @@ html {
     margin-left: 0.6rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .contact-text-1 {
     color: var(--clr-neutral-1000);
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .contact-text-2 {
     color: var(--clr-neutral-1000);
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 

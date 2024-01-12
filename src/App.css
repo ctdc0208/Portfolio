@@ -1082,6 +1082,9 @@ html {
     .project-screenshot {
         height: 20.3125rem;
     }
+    .project-info-container {
+        margin: 0 1.5rem;
+    }
     .tech-stack-used-container img {
         width: 6.063rem;
         height: 1.749rem;

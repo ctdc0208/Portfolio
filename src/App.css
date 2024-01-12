@@ -229,7 +229,7 @@ html {
 /* Start - About styles */
 
 .about-container {
-    padding: 10.9375rem 18.4375rem;
+    padding: 10.9375rem 0;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -237,10 +237,45 @@ html {
     flex-direction: row;
 }
 
-.project-picture-container {
+.profile-picture-container {
     width: 21.875rem;
     height: 21.875rem;
     flex-shrink: 0;
+    background-color: #000;
+}
+
+.about-info-container {
+    margin-left: 4.94rem;
+    width: 26.25rem;
+}
+
+.about-info-container div {
+    margin-bottom: 1.25rem;
+}
+
+.about-me {
+    color: var(--clr-primary);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1.12rem;
+}
+
+.about-title {
+    color: var(--clr-neutral-1000);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-desciption {
+    color: var(--clr-neutral-1000);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 

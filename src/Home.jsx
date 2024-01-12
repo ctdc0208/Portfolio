@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className="home-container grid-12" id="home">
+        <div className="home-container home-grid-12" id="home">
             <div className="title-container">
                 <div className="dev-icon"></div>
                 <div className="home-title">Front-End Web Developer</div>

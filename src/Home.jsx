@@ -3,15 +3,15 @@ export default function Home() {
         <div className="home-container home-grid-12" id="home">
             <div className="title-container">
                 <div className="dev-icon"></div>
-                <div className="home-title">Front-End Web Developer</div>
+                <div className="home-title font-700">Front-End Web Developer</div>
             </div>
-            <div className="title-text">Hi, I&apos;m Christian dela Cruz. A Front-End Web Developer based in Cavite, Philippines.</div>
+            <div className="title-text font-400">Hi, I&apos;m Christian dela Cruz. A Front-End Web Developer based in Cavite, Philippines.</div>
             <div className="home-contact-links">
                 <a className="linkedin-icon" href="https://www.linkedin.com/in/ctdc0208" target="_blank" rel="noreferrer"></a>
                 <a className="github-icon" href="https://github.com/ctdc0208" target="_blank" rel="noreferrer"></a>
             </div>
             <div className="tech-stack-container">
-                <div className="tech-stack-title">Tech Stack</div>
+                <div className="tech-stack-title font-400">Tech Stack</div>
                 <div className="home-icon-container">
                     <div className="html-icon svg-icon"></div>
                     <div className="css-icon svg-icon"></div>

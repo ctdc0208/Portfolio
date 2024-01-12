@@ -16,6 +16,45 @@ html {
 }
 
 
+/* Repeatable styles*/
+
+.svg-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.font-700 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.font-400 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.font-600 {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.font-500 {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
 /* Header styles */
 
 .sticky-header {
@@ -33,26 +72,17 @@ html {
     padding: 0 3.75rem;
     height: 4.6875rem;
     background-color: var(--clr-neutral-100);
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header-name {
     color: var(--clr-neutral-1000);
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .button-header {
+    font-size: 1rem;
     cursor: pointer;
     color: var(--clr-neutral-1000);
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-left: 1.56rem;
 }
 
@@ -87,10 +117,6 @@ html {
     background-image: url(../src/assets/dev.svg);
     height: 6.375rem;
     width: 8rem;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-right: 1.25rem;
 }
 
@@ -102,9 +128,6 @@ html {
     justify-content: center;
     flex-shrink: 0;
     font-size: 4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .title-text {
@@ -112,9 +135,6 @@ html {
     grid-row: 4 / 5;
     padding-top: 2.5rem;
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .home-contact-links {
@@ -154,9 +174,6 @@ html {
     width: 6.5625rem;
     padding: 0.75rem 0;
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     padding-right: 2.25rem;
     border-right: 1px solid var(--clr-neutral-1000);
 }
@@ -172,12 +189,6 @@ html {
 
 .home-icon-container div {
     margin-right: 1.25rem;
-}
-
-.svg-icon {
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex-shrink: 0;
 }
 
 .html-icon {
@@ -256,26 +267,17 @@ html {
 .about-me {
     color: var(--clr-primary);
     font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 1.12rem;
 }
 
 .about-title {
     color: var(--clr-neutral-1000);
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
 }
 
 .about-desciption {
     color: var(--clr-neutral-1000);
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 
@@ -301,9 +303,6 @@ html {
     grid-row: 1 / 2;
     color: var(--clr-primary);
     font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .projects-intro {
@@ -313,9 +312,6 @@ html {
     margin-top: 2.12rem;
     color: var(--clr-neutral-1000);
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .project-container {
@@ -360,9 +356,6 @@ html {
     background-position: center;
     height: 20.3125rem;
     border-radius: 1.25rem;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .project-screenshot-shopping {
@@ -392,9 +385,6 @@ html {
     color: var(--clr-neutral-1000);
     text-align: center;
     font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     text-transform: capitalize;
     margin-bottom: 1.5rem;
 }
@@ -402,9 +392,6 @@ html {
 .project-description {
     color: var(--clr-neutral-1000);
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin-bottom: 1.5rem;
 }
 
@@ -417,9 +404,6 @@ html {
 
 .tech-stack-used-container img {
     border-radius: 0.563rem;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 0 0.2rem;
 }
 
@@ -441,9 +425,6 @@ html {
     margin-left: 0.31rem;
     color: var(--clr-neutral-1000);
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
 .project-github-icon {
@@ -484,9 +465,6 @@ html {
 .contact-me {
     color: var(--clr-primary);
     font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     margin-top: 1.12rem;
 }
 
@@ -494,9 +472,6 @@ html {
     margin-top: 1.5rem;
     color: var(--clr-neutral-1000);
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .contacts-info-container {

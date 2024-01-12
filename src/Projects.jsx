@@ -1,34 +1,34 @@
 export default function Projects() {
     return (
         <div className="projects-component-container projects-grid-12" id="projects">
-            <div className="projects-text">
+            <div className="projects-text font-700">
                 Projects
             </div>
-            <div className="projects-intro">
+            <div className="projects-intro font-700">
                 Each project is a unique piece of development 🧩
             </div>
             <div className="project-container project-one-container">
-                <div className="project-screenshot project-screenshot-shopping"></div>
+                <div className="project-screenshot project-screenshot-shopping box-shadow"></div>
                 <div className="project-info-container">
-                    <div className="project-title">
+                    <div className="project-title font-700">
                         Shopping Page
                     </div>
-                    <div className="project-description">
+                    <div className="project-description font-400">
                         A simple shopping page focused on creating a delightful user experience, I meticulously designed an intuitive interface with cohesive styling for seamless navigation.  This project represents my commitment to delivering user-friendly and technically sound web applications.
                     </div>
                     <div className="tech-stack-used-container">
-                        <img src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
-                        <img src="https://img.shields.io/badge/REST_API-09b7e7?style=for-the-badge" alt="REST API" />
-                        <img src="https://img.shields.io/badge/Webpack-334047?style=for-the-badge&logo=Webpack&logoColor=%238DD6F9" alt="Webpack" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/REST_API-09b7e7?style=for-the-badge" alt="REST API" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/Webpack-334047?style=for-the-badge&logo=Webpack&logoColor=%238DD6F9" alt="Webpack" />
                     </div>
                     <div className="project-links">
                         <a className="project-link-button" href="https://github.com/ctdc0208/shopping" target="_blank" rel="noreferrer">
                             <div className="project-github-icon svg-icon"></div>
-                            <div className="project-link-button-text">Code</div>
+                            <div className="project-link-button-text font-500">Code</div>
                         </a>
                         <a className="project-link-button" href="https://ctdc0208.github.io/shopping/" target="_blank" rel="noreferrer">
                             <div className="live-demo-icon svg-icon"></div>
-                            <div className="project-link-button-text">Live Demo</div>
+                            <div className="project-link-button-text font-500">Live Demo</div>
                         </a>
                     </div>
                 </div>
@@ -42,24 +42,24 @@ export default function Projects() {
                         CV Application platform to elevate your professional presence. A user-centric design that offers a seamless and intuitive experience to help you create a standout CV effortlessly.
                     </div>
                     <div className="tech-stack-used-container">
-                        <img src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
-                        <img src="https://img.shields.io/badge/Redux-363636?style=for-the-badge&logo=Redux&logoColor=%23764ABC" alt="Redux" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/REACT-0d0d1f?style=for-the-badge&logo=REACT&logoColor=%2361DAFB" alt="React" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/Redux-363636?style=for-the-badge&logo=Redux&logoColor=%23764ABC" alt="Redux" />
                     </div>
                     <div className="project-links">
                         <a className="project-link-button" href="https://github.com/ctdc0208/CV-Application" target="_blank" rel="noreferrer">
                             <div className="project-github-icon svg-icon"></div>
-                            <div className="project-link-button-text">Code</div>
+                            <div className="project-link-button-text font-500">Code</div>
                         </a>
                         <a className="project-link-button" href="https://ctdc0208.github.io/CV-Application" target="_blank" rel="noreferrer">
                             <div className="live-demo-icon svg-icon"></div>
-                            <div className="project-link-button-text">Live Demo</div>
+                            <div className="project-link-button-text font-500">Live Demo</div>
                         </a>
                     </div>
                 </div>
-                <div className="project-screenshot project-screenshot-CV-Application"></div>
+                <div className="project-screenshot project-screenshot-CV-Application box-shadow"></div>
             </div>
             <div className="project-container project-three-container">
-                <div className="project-screenshot project-screenshot-Weather-App"></div>
+                <div className="project-screenshot project-screenshot-Weather-App box-shadow"></div>
                 <div className="project-info-container">
                     <div className="project-title">
                         WEATHER APP
@@ -70,18 +70,18 @@ App. Real-time weather data with a user-friendly search feature, obtain detailed
 upcoming days.
                     </div>
                     <div className="tech-stack-used-container">
-                        <img src="https://img.shields.io/badge/JAVASCRIPT-413d3e?style=for-the-badge&logo=JavaScript&logoColor=%23F7DF1E" alt="JavaScript" />
-                        <img src="https://img.shields.io/badge/CSS-3fc0ff?style=for-the-badge&logo=CSS3&logoColor=%231572B6" alt="CSS" />
-                        <img src="https://img.shields.io/badge/HTML-c1dcfc?style=for-the-badge&logo=HTML5&logoColor=E34F26" alt="HTML" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/JAVASCRIPT-413d3e?style=for-the-badge&logo=JavaScript&logoColor=%23F7DF1E" alt="JavaScript" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/CSS-3fc0ff?style=for-the-badge&logo=CSS3&logoColor=%231572B6" alt="CSS" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/HTML-c1dcfc?style=for-the-badge&logo=HTML5&logoColor=E34F26" alt="HTML" />
                     </div>
                     <div className="project-links">
                         <a className="project-link-button" href="https://github.com/ctdc0208/Weather-App" target="_blank" rel="noreferrer">
                             <div className="project-github-icon svg-icon"></div>
-                            <div className="project-link-button-text">Code</div>
+                            <div className="project-link-button-text font-500">Code</div>
                         </a>
                         <a className="project-link-button" href="https://ctdc0208.github.io/Weather-App" target="_blank" rel="noreferrer">
                             <div className="live-demo-icon svg-icon"></div>
-                            <div className="project-link-button-text">Live Demo</div>
+                            <div className="project-link-button-text font-500">Live Demo</div>
                         </a>
                     </div>
                 </div>
@@ -95,17 +95,17 @@ upcoming days.
                     A Mini-Message board built using Node.js.  Through the implementation of routes and asynchronous database operations, I ensured smooth interactions within the platform.
                     </div>
                     <div className="tech-stack-used-container">
-                        <img src="https://img.shields.io/badge/node.js-0e4158?style=for-the-badge&logo=node.js&logoColor=%23339933" alt="Node.js" />
-                        <img src="https://img.shields.io/badge/Express-6a6a7c?style=for-the-badge&logo=Express&logoColor=%23000000" alt="Express.js" />                                 <img src="https://img.shields.io/badge/MongoDB-082532?style=for-the-badge&logo=MongoDB&logoColor=%2347A248" alt="MongoDB" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/node.js-0e4158?style=for-the-badge&logo=node.js&logoColor=%23339933" alt="Node.js" />
+                        <img className="box-shadow" src="https://img.shields.io/badge/Express-6a6a7c?style=for-the-badge&logo=Express&logoColor=%23000000" alt="Express.js" />                                 <img src="https://img.shields.io/badge/MongoDB-082532?style=for-the-badge&logo=MongoDB&logoColor=%2347A248" alt="MongoDB" />
                     </div>
                     <div className="project-links">
                         <a className="project-link-button" href="https://github.com/ctdc0208/Mini-Message-Board" target="_blank" rel="noreferrer">
                             <div className="project-github-icon svg-icon"></div>
-                            <div className="project-link-button-text">Code</div>
+                            <div className="project-link-button-text font-500">Code</div>
                         </a>
                     </div>
                 </div>
-                <div className="project-screenshot project-screenshot-Message-Board"></div>
+                <div className="project-screenshot project-screenshot-Message-Board box-shadow"></div>
             </div>
         </div>
     )

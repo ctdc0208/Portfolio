@@ -357,7 +357,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 20.3125rem;
     border-radius: 1.25rem;
 }
 
@@ -408,6 +407,7 @@ html {
 .tech-stack-used-container img {
     border-radius: 0.563rem;
     margin: 0 0.2rem;
+    object-fit: fill;
 }
 
 .project-links {
@@ -553,7 +553,7 @@ html {
         display: none;
     }
     .home-grid-12 {
-        grid-template-columns: repeat(12, 1.6rem);
+        grid-template-columns: calc(100vw - 10vw);
         grid-template-rows: repeat(12, 1fr);
         column-gap: 0.078rem;
     }
@@ -641,7 +641,7 @@ html {
         width: 20.0625rem;
     }
     .projects-grid-12 {
-        grid-template-columns: repeat(12, 1.6rem);
+        grid-template-columns: calc(100vw - 10vw);
         grid-template-rows: repeat(auto, 1.25rem);
         column-gap: 0.078rem;
         justify-content: center;
@@ -654,18 +654,15 @@ html {
         display: flex;
         flex-direction: column-reverse;
     }
-    .project-screenshot {
-        width: 19.375rem;
-        height: 10.89425rem;
-    }
     .project-info-container {
         margin: 2.5rem 0;
     }
     .tech-stack-used-container img {
         width: 30%;
+        height: 2.256rem;
     }
     .contact-grid-12 {
-        grid-template-columns: repeat(12, 1.6rem);
+        grid-template-columns: calc(100vw - 10vw);
         grid-template-rows: repeat(auto, 1.25rem);
         column-gap: 0.078rem;
     }
@@ -797,9 +794,6 @@ html {
         display: flex;
         flex-direction: column-reverse;
     }
-    .project-screenshot {
-        height: 22.3125rem;
-    }
     .project-info-container {
         margin: 2.5rem 3rem 0;
     }
@@ -927,7 +921,7 @@ html {
         width: 22.27406rem;
     }
     .projects-grid-12 {
-        grid-template-columns: repeat(12, 3.7rem);
+        grid-template-columns: calc(100vw - 10vw);
         grid-template-rows: repeat(auto, 1.25rem);
         column-gap: 0.078rem;
         justify-content: center;
@@ -939,9 +933,6 @@ html {
     .project-column {
         display: flex;
         flex-direction: column-reverse;
-    }
-    .project-screenshot {
-        height: 22.3125rem;
     }
     .project-info-container {
         margin: 2.5rem 3rem 0;

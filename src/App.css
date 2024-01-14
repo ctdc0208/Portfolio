@@ -22,6 +22,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .box-shadow {

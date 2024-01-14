@@ -13,13 +13,13 @@ export default function Home() {
             <div className="tech-stack-container">
                 <div className="tech-stack-title font-400">Tech Stack</div>
                 <div className="home-icon-container">
-                    <div className="html-icon svg-icon"></div>
-                    <div className="css-icon svg-icon"></div>
-                    <div className="js-icon svg-icon"></div>
-                    <div className="react-icon svg-icon"></div>
-                    <div className="node-icon svg-icon"></div>
-                    <div className="mongodb-icon svg-icon"></div>
-                    <div className="express-icon svg-icon"></div>
+                    <div className="html-icon svg-icon" title="HTML"></div>
+                    <div className="css-icon svg-icon" title="CSS"></div>
+                    <div className="js-icon svg-icon" title="Javasript"></div>
+                    <div className="react-icon svg-icon" title="React.js"></div>
+                    <div className="node-icon svg-icon" title="Node.js"></div>
+                    <div className="mongodb-icon svg-icon" title="MongoDB"></div>
+                    <div className="express-icon svg-icon" title="Express.js"></div>
                 </div>
             </div>
         </div>

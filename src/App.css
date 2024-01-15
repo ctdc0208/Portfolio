@@ -1,9 +1,6 @@
 body,
 html {
     font-size: 16px;
-}
-
-:root {
     --clr-primary: #249280;
     --clr-neutral-100: #fff;
     --clr-neutral-300: #F4F4F4;
@@ -13,6 +10,35 @@ html {
     --clr-neutral-900: #696969;
     --clr-neutral-1000: #000000;
     --font-color-700: #808080;
+    --box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+body.dark {
+    --clr-primary: #36dec3;
+    --clr-neutral-100: #1a1a1e;
+    --clr-neutral-300: #22232a;
+    --clr-neutral-400: #242424;
+    --clr-neutral-600: #363636;
+    --clr-neutral-700: #585858;
+    --clr-neutral-900: #9e9e9e;
+    --clr-neutral-1000: #ffffff;
+    --font-color-700: #808080;
+    --box-shadow: rgba(221, 221, 221, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --clr-primary: #36dec3;
+        --clr-neutral-100: #1a1a1e;
+        --clr-neutral-300: #22232a;
+        --clr-neutral-400: #242424;
+        --clr-neutral-600: #363636;
+        --clr-neutral-700: #585858;
+        --clr-neutral-900: #9e9e9e;
+        --clr-neutral-1000: #ffffff;
+        --font-color-700: #808080;
+        --box-shadow: rgba(221, 221, 221, 0.25);
+    }
 }
 
 
@@ -21,14 +47,16 @@ html {
 .svg-icon {
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-mask-size: contain;
+    mask-size: contain;
     flex-shrink: 0;
     cursor: pointer;
 }
 
 .box-shadow {
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0px var(--box-shadow);
+    -moz-box-shadow: 0px 4px 4px 0px var(--box-shadow);
+    box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
 
 .font-700 {
@@ -79,6 +107,156 @@ html {
     font-size: 1.25rem;
 }
 
+.header-buttons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* react-toggle css*/
+
+.react-toggle {
+    touch-action: pan-x;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.react-toggle-screenreader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.react-toggle--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}
+
+.react-toggle-track {
+    width: 50px;
+    height: 24px;
+    padding: 0;
+    border-radius: 30px;
+    background-color: #4D4D4D;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: #000000;
+}
+
+.react-toggle--checked .react-toggle-track {
+    background-color: var(--clr-primary);
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: var(--clr-primary);
+}
+
+.react-toggle-track-check {
+    position: absolute;
+    height: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    left: 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track-check {
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+
+.react-toggle-track-x {
+    position: absolute;
+    height: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    right: 5px;
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track-x {
+    opacity: 0;
+}
+
+.react-toggle-thumb {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #4D4D4D;
+    border-radius: 50%;
+    background-color: #FAFAFA;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+    left: 27px;
+    border-color: #19AB27;
+}
+
+.react-toggle--focus .react-toggle-thumb {
+    -webkit-box-shadow: 0px 0px 3px 2px #0099E0;
+    -moz-box-shadow: 0px 0px 3px 2px #0099E0;
+    box-shadow: 0px 0px 2px 3px #0099E0;
+}
+
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+    -webkit-box-shadow: 0px 0px 5px 5px #0099E0;
+    -moz-box-shadow: 0px 0px 5px 5px #0099E0;
+    box-shadow: 0px 0px 5px 5px #0099E0;
+}
+
+.button-navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .button-header {
     font-size: 1rem;
     cursor: pointer;
@@ -114,7 +292,9 @@ html {
 }
 
 .dev-icon {
-    background-image: url(../src/assets/dev.svg);
+    background-color: var(--clr-neutral-1000);
+    -webkit-mask-image: url(../src/assets/dev.svg);
+    mask-image: url(../src/assets/dev.svg);
     height: 6.375rem;
     width: 8rem;
     margin-right: 1.25rem;
@@ -128,6 +308,7 @@ html {
     justify-content: center;
     flex-shrink: 0;
     font-size: 4rem;
+    color: var(--clr-neutral-1000);
 }
 
 .title-text {
@@ -135,6 +316,7 @@ html {
     grid-row: 4 / 5;
     padding-top: 2.5rem;
     font-size: 1.25rem;
+    color: var(--clr-neutral-1000);
 }
 
 .home-contact-links {
@@ -149,16 +331,19 @@ html {
     display: block;
     width: 2.4375rem;
     height: 2.4375rem;
-    fill: var(--clr-neutral-1000);
 }
 
 .linkedin-icon {
-    background-image: url(../src/assets/linkedin-icon.svg);
+    background-color: var(--clr-neutral-1000);
+    -webkit-mask-image: url(../src/assets/linkedin-icon.svg);
+    mask-image: url(../src/assets/linkedin-icon.svg);
     margin-right: 1.12rem;
 }
 
 .github-icon {
-    background-image: url(../src/assets/github-icon.svg);
+    background-color: var(--clr-neutral-1000);
+    -webkit-mask-image: url(../src/assets/github-icon.svg);
+    mask-image: url(../src/assets/github-icon.svg);
 }
 
 .tech-stack-container {
@@ -228,7 +413,9 @@ html {
 }
 
 .express-icon {
-    background-image: url(../src/assets/express.svg);
+    background-color: var(--clr-neutral-1000);
+    -webkit-mask-image: url(../src/assets/express.svg);
+    mask-image: url(../src/assets/express.svg);
     height: 3.75rem;
     width: 3.75rem;
 }
@@ -241,6 +428,7 @@ html {
 
 .about-container {
     padding: 10.9375rem 0;
+    background-color: var(--clr-neutral-100);
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -279,7 +467,7 @@ html {
     font-size: 1rem;
 }
 
-.about-desciption {
+.about-description {
     color: var(--clr-neutral-1000);
     font-size: 1rem;
 }
@@ -550,7 +738,7 @@ html {
     .header-container {
         padding: 0 1.25rem;
     }
-    .button-header-container {
+    .button-navbar-container {
         display: none;
     }
     .home-grid-12 {

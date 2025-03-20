@@ -13,7 +13,7 @@ export default function Contact() {
                         <div className="location-icon svg-icon"></div>
                         <div className="contacts-info-2nd-inner-container">
                             <div className="contact-text-1 font-700">Location</div>
-                            <div className="contact-text-2 font-600">Cavite, Philippines</div>
+                            <div className="contact-text-2 font-600">Manila, Philippines</div>
                         </div>
                     </div>
                     <div className="contacts-info-inner-container">

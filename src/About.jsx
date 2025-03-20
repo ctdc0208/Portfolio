@@ -4,8 +4,9 @@ export default function About() {
             <div className="profile-picture-container"></div>
             <div className="about-info-container">
                 <div className="about-me font-700">About Me</div>
-                <div className="about-title font-600">A dedicated Front-end Developer based in Cavite, Philippines.</div>
-                <div className="about-description font-400">As a Junior Front-End Developer, I have a formidable skill set encompassing HTML, CSS, JavaScript, React, Node, and MongoDB. My strengths lie in creating and managing responsive websites that provide a seamless user experience. I specialize in developing dynamic and captivating interfaces by writing efficient, clean code and employing the latest development tools and techniques. Additionally, I am a collaborative team player, thriving in cross-functional environments to deliver exceptional web applications.</div>
+                <div className="about-title font-600">A dedicated Software Developer based in Manila, Philippines.</div>
+                <div className="about-description font-400">As a Software Developer, I have a formidable skill set encompassing HTML, CSS, JavaScript, React, Node, and MongoDB. I specialize in developing dynamic and captivating interfaces by writing efficient, clean code and employing the latest development tools and techniques.</div>
+                <div className="about-description font-400">In addition to front-end development, I&apos;ve resolved Perl/Python bugs and ensured software integrity throughout development. As a collaborative team player, I work closely with clients to identify needs and deliver high-quality web applications.</div>
             </div>
         </div>
     )
